@@ -1,0 +1,65 @@
+name: Deploy IEPP to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iepp-github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'Hector295/iepp-web' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Check Astro types
+        run: npm run check
+      - name: Build static site
+        run: npm run build
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Verify the independent IEPP domain
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          domain="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.cname // ""')"
+          if [[ "$domain" != "iepp.velifatech.com" ]]; then
+            echo "::error::Set Settings > Pages > Custom domain to iepp.velifatech.com in Hector295/iepp-web before deploying. No domain settings were changed."
+            exit 1
+          fi
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

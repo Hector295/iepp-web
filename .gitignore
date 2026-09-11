@@ -1,0 +1,18 @@
+node_modules/
+out/
+.env
+.env.*
+!.env.example
+.DS_Store
+.openai/
+.impeccable/
+.agents/
+.codex/
+dist/
+.astro/
+
+# Archivos temporales de herramientas
+*.log
+*.tsbuildinfo
+playwright-report/
+test-results/

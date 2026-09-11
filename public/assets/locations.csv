@@ -1,0 +1,43 @@
+region,nombre,departamento,direccion,latitud,longitud,precision
+Norte,Sede Nacional Chiclayo,Lambayeque,"Ca. La Florida 608/678 - Urb. San Eduardo",-6.770080,-79.854950,APROX_LOCALIDAD
+Norte,San Antonio,Lambayeque,"Av. Alexander Von Humboldt 520 - Chiclayo",-6.778625,-79.862864,PIN
+Norte,La Victoria,Lambayeque,"55X5+W2R - La Victoria",-6.800188,-79.842438,PLUS_CODE
+Norte,Vista Alegre,Lambayeque,"Cruz de la Esperanza - Pradera 34 - Chiclayo",-6.770080,-79.854950,APROX_LOCALIDAD
+Norte,Cayalti,Lambayeque,"4C6R+R8V - Cayalti",-6.887938,-79.559188,PLUS_CODE
+Norte,Ciudad Eten,Lambayeque,"Diego Ferre 265",-6.908100,-79.864200,APROX_LOCALIDAD
+Norte,Puerto Eten,Lambayeque,"Manuel C. Bonilla 218",-6.927180,-79.867560,OSM
+Norte,Reque,Lambayeque,"Atahualpa 706",-6.866667,-79.824167,APROX_LOCALIDAD
+Norte,Motupe,Lambayeque,"R7VP+4VX",-6.157188,-79.712813,PLUS_CODE
+Norte,Ferrenafe Sucre,Lambayeque,"Sucre 118",-6.638890,-79.788890,APROX_LOCALIDAD
+Norte,Ferrenafe HS,Lambayeque,"96F6+86X",-6.626688,-79.789438,PLUS_CODE
+Norte,Ferrenafe 2,Lambayeque,"9634+9GP",-6.646563,-79.793688,PLUS_CODE
+Sur,El Porvenir,La Libertad,"Hermanos Angulo 740",-8.083330,-79.000000,APROX_LOCALIDAD
+Sur,La Esperanza,La Libertad,"Santa Rosa 269",-8.064901,-79.081529,PIN
+Sur,Huamachuco Jr Lara,La Libertad,"Jr. Lara 386",-7.812083,-78.048694,APROX_LOCALIDAD
+Sur,Huamachuco Gonzales Prada,La Libertad,"Manuel Gonzales Prada",-7.812083,-78.048694,APROX_LOCALIDAD
+Sur,Piedras Vivas Trujillo,La Libertad,"Manuel Encinas 133",-8.097600,-79.020690,DIRECCION
+Sur,Chicama,La Libertad,"4VP7+8F9 - Calle San Martin",-7.864188,-79.136313,PLUS_CODE
+Sur,El Agustino Lima,Lima,"Av. 1 de Mayo 3321",-12.031540,-77.003100,OSM
+Sur,San Antonio de Chaclla,Lima,"32CJ+XW5 - Lloque Yupanqui",-11.927563,-76.967688,PLUS_CODE
+Nor Oriente,Jaen Sanchez Carrion,Cajamarca,"Sanchez Carrion 637",-5.707290,-78.807850,APROX_LOCALIDAD
+Nor Oriente,Jaen 2,Cajamarca,"76R2+6H6",-5.709438,-78.798563,PLUS_CODE
+Nor Oriente,Maranatha Jaen,Cajamarca,"75RX+JWM - Fernando Belaunde Terry",-5.713828,-78.799328,PIN
+Nor Oriente,Bagua,Amazonas,"Av. Circunvalacion Mz.53 Lt.5",-5.639090,-78.531730,APROX_LOCALIDAD
+Nor Oriente,Cumba,Amazonas,"Av. Progreso 709-738",-5.935660,-78.664070,APROX_LOCALIDAD
+Oriente,Moyobamba,San Martin,"Av. Grau 773",-6.034410,-76.974230,APROX_LOCALIDAD
+Oriente,Rioja,San Martin,"Jr. Amazonas 146",-6.056750,-77.166510,APROX_LOCALIDAD
+Oriente,Soritor 1,San Martin,"VV4V+GGM",-6.143688,-77.106188,PLUS_CODE
+Oriente,Soritor 2,San Martin,"QWRQ+MG5",-6.208313,-77.061188,PLUS_CODE
+Nor Andina,Bambamarca,Cajamarca,"8F36+W7Q",-6.695188,-78.539313,PLUS_CODE
+Nor Andina,El Lirio,Cajamarca,"9CRM+3XH",-6.609813,-78.565063,PLUS_CODE
+Nor Andina,San Jose del Obelisco,Cajamarca,"Jr. San Martin de Porres 1219",-6.679588,-78.519210,APROX_LOCALIDAD
+Nor Andina,Agomarca Bajo,Cajamarca,"Agomarca Bajo",-6.692510,-78.533100,APROX_LOCALIDAD
+Nor Andina,Jorge Chavez,Cajamarca,"8FCH+5XM",-6.679563,-78.520063,PLUS_CODE
+Nor Andina,Maygasbamba Alto,Cajamarca,"8FP9+R5",-6.662938,-78.532063,PLUS_CODE
+Nor Andina,Bambamarca 2,Cajamarca,"9F42+98P",-6.644063,-78.549188,PLUS_CODE
+Nor Andina,Cajamarca Ciudad,Cajamarca,"Jr. Los Gladiolos 227",-7.163977,-78.512698,PIN
+Nor Andina,Cutervo,Cajamarca,"G5W6+2M9",-6.454938,-78.838313,PLUS_CODE
+Nor Andina,Cashapampa Alto,Cajamarca,"Cashapampa Alto",-6.743398,-78.522611,APROX_LOCALIDAD
+Nor Andina,Socota,Cajamarca,"Socota - Cutervo",-6.315357,-78.699620,APROX_LOCALIDAD
+Ucayali,Pucallpa Salvador Allende,Ucayali,"Av. Salvador Allende 190",-8.379150,-74.553870,APROX_LOCALIDAD
+Ucayali,Pucallpa 15 de Febrero,Ucayali,"HCQR+9QF",-8.411563,-74.558063,PLUS_CODE

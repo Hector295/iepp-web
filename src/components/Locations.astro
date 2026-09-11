@@ -1,0 +1,362 @@
+<section id="sedes" class="locations" aria-labelledby="locations-title">
+        <div class="locations-heading">
+          <h2 id="locations-title">Encuentra una sede cerca de ti.</h2>
+          <p>Consulta las direcciones y ubicaciones de nuestras iglesias en las seis regiones.</p>
+        </div>
+        <div class="locations-filters" hidden>
+          <label for="location-search">Busca una iglesia o localidad<input id="location-search" type="search" placeholder="Nombre, localidad o dirección" autocomplete="off" aria-controls="locations-directory" /></label>
+          <label for="location-region">Región<select id="location-region" aria-controls="locations-directory"><option value="">Todas las regiones · 42</option><option value="Norte">Norte · 12</option><option value="Sur">Sur · 8</option><option value="Nor Oriente">Nor Oriente · 5</option><option value="Oriente">Oriente · 4</option><option value="Nor Andina">Nor Andina · 11</option><option value="Ucayali">Ucayali · 2</option></select></label>
+        </div>
+        <div class="locations-layout">
+          <figure class="locations-map">
+            <div class="map-toolbar" hidden><button type="button" data-peru-view>Ver todo el Perú</button><button type="button" data-fit-locations>Acercar a resultados</button></div>
+            <div id="church-map" role="region" aria-label="Mapa de las sedes de la Iglesia de los Peregrinos en el Perú" aria-describedby="map-description"></div>
+            <p id="map-status" role="status"></p>
+            <figcaption id="map-description">Mapa de referencia del Perú. Acércate a los grupos para explorar las sedes; el borde discontinuo indica una ubicación aproximada. Para ver calles e indicaciones, abre la sede en Google Maps.</figcaption>
+            <script is:inline type="application/json" id="peru-geometry">{"type":"Polygon","coordinates":[[[-69.893635,-4.298187],[-70.794769,-4.251265],[-70.928843,-4.401591],[-71.748406,-4.593983],[-72.891928,-5.274561],[-72.964507,-5.741251],[-73.219711,-6.089189],[-73.120027,-6.629931],[-73.724487,-6.918595],[-73.723401,-7.340999],[-73.987235,-7.52383],[-73.571059,-8.424447],[-73.015383,-9.032833],[-73.226713,-9.462213],[-72.563033,-9.520194],[-72.184891,-10.053598],[-71.302412,-10.079436],[-70.481894,-9.490118],[-70.548686,-11.009147],[-70.093752,-11.123972],[-69.529678,-10.951734],[-68.66508,-12.5613],[-68.88008,-12.899729],[-68.929224,-13.602684],[-68.948887,-14.453639],[-69.339535,-14.953195],[-69.160347,-15.323974],[-69.389764,-15.660129],[-68.959635,-16.500698],[-69.590424,-17.580012],[-69.858444,-18.092694],[-70.372572,-18.347975],[-71.37525,-17.773799],[-71.462041,-17.363488],[-73.44453,-16.359363],[-75.237883,-15.265683],[-76.009205,-14.649286],[-76.423469,-13.823187],[-76.259242,-13.535039],[-77.106192,-12.222716],[-78.092153,-10.377712],[-79.036953,-8.386568],[-79.44592,-7.930833],[-79.760578,-7.194341],[-80.537482,-6.541668],[-81.249996,-6.136834],[-80.926347,-5.690557],[-81.410943,-4.736765],[-81.09967,-4.036394],[-80.302561,-3.404856],[-80.184015,-3.821162],[-80.469295,-4.059287],[-80.442242,-4.425724],[-80.028908,-4.346091],[-79.624979,-4.454198],[-79.205289,-4.959129],[-78.639897,-4.547784],[-78.450684,-3.873097],[-77.837905,-3.003021],[-76.635394,-2.608678],[-75.544996,-1.56161],[-75.233723,-0.911417],[-75.373223,-0.152032],[-75.106625,-0.057205],[-74.441601,-0.53082],[-74.122395,-1.002833],[-73.659504,-1.260491],[-73.070392,-2.308954],[-72.325787,-2.434218],[-71.774761,-2.16979],[-71.413646,-2.342802],[-70.813476,-2.256865],[-70.047709,-2.725156],[-70.692682,-3.742872],[-70.394044,-3.766591],[-69.893635,-4.298187]]]}</script>
+          </figure>
+          <div class="locations-results">
+            <p id="location-count" class="location-count" role="status" aria-live="polite">42 sedes encontradas</p>
+            <div id="locations-directory" class="locations-directory" role="region" aria-label="Directorio de sedes" tabindex="0">
+            <article class="location-entry" data-number="1" data-region="Norte" data-city="Chiclayo" data-lat="-6.770080" data-lng="-79.854950" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">1</span>
+              <h3>Sede Nacional Chiclayo</h3>
+              <p class="location-city">Chiclayo · Lambayeque · Región Norte</p>
+              <address>Ca. La Florida 608/678 - Urb. San Eduardo</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Sede Nacional Chiclayo en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.770080%2C-79.854950" target="_blank" rel="noopener noreferrer" aria-label="Abrir Sede Nacional Chiclayo en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="2" data-region="Norte" data-city="Chiclayo" data-lat="-6.778625" data-lng="-79.862864" data-precision="PIN">
+              <span class="location-number" aria-hidden="true">2</span>
+              <h3>San Antonio</h3>
+              <p class="location-city">Chiclayo · Lambayeque · Región Norte</p>
+              <address>Av. Alexander Von Humboldt 520 - Chiclayo</address>
+              <p class="location-precision">Pin proporcionado</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver San Antonio en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.778625%2C-79.862864" target="_blank" rel="noopener noreferrer" aria-label="Abrir San Antonio en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="3" data-region="Norte" data-city="La Victoria, Chiclayo" data-lat="-6.800188" data-lng="-79.842438" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">3</span>
+              <h3>La Victoria</h3>
+              <p class="location-city">La Victoria, Chiclayo · Lambayeque · Región Norte</p>
+              <address>55X5+W2R - La Victoria</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver La Victoria en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.800188%2C-79.842438" target="_blank" rel="noopener noreferrer" aria-label="Abrir La Victoria en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="4" data-region="Norte" data-city="Chiclayo" data-lat="-6.770080" data-lng="-79.854950" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">4</span>
+              <h3>Vista Alegre</h3>
+              <p class="location-city">Chiclayo · Lambayeque · Región Norte</p>
+              <address>Cruz de la Esperanza - Pradera 34 - Chiclayo</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Vista Alegre en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.770080%2C-79.854950" target="_blank" rel="noopener noreferrer" aria-label="Abrir Vista Alegre en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="5" data-region="Norte" data-city="Cayaltí" data-lat="-6.887938" data-lng="-79.559188" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">5</span>
+              <h3>Cayalti</h3>
+              <p class="location-city">Cayaltí · Lambayeque · Región Norte</p>
+              <address>4C6R+R8V - Cayalti</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Cayalti en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.887938%2C-79.559188" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cayalti en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="6" data-region="Norte" data-city="Ciudad Eten" data-lat="-6.908100" data-lng="-79.864200" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">6</span>
+              <h3>Ciudad Eten</h3>
+              <p class="location-city">Ciudad Eten · Lambayeque · Región Norte</p>
+              <address>Diego Ferre 265</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Ciudad Eten en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.908100%2C-79.864200" target="_blank" rel="noopener noreferrer" aria-label="Abrir Ciudad Eten en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="7" data-region="Norte" data-city="Puerto Eten" data-lat="-6.927180" data-lng="-79.867560" data-precision="OSM">
+              <span class="location-number" aria-hidden="true">7</span>
+              <h3>Puerto Eten</h3>
+              <p class="location-city">Puerto Eten · Lambayeque · Región Norte</p>
+              <address>Manuel C. Bonilla 218</address>
+              <p class="location-precision">Referencia OSM</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Puerto Eten en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.927180%2C-79.867560" target="_blank" rel="noopener noreferrer" aria-label="Abrir Puerto Eten en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="8" data-region="Norte" data-city="Reque" data-lat="-6.866667" data-lng="-79.824167" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">8</span>
+              <h3>Reque</h3>
+              <p class="location-city">Reque · Lambayeque · Región Norte</p>
+              <address>Atahualpa 706</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Reque en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.866667%2C-79.824167" target="_blank" rel="noopener noreferrer" aria-label="Abrir Reque en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="9" data-region="Norte" data-city="Motupe" data-lat="-6.157188" data-lng="-79.712813" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">9</span>
+              <h3>Motupe</h3>
+              <p class="location-city">Motupe · Lambayeque · Región Norte</p>
+              <address>R7VP+4VX</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Motupe en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.157188%2C-79.712813" target="_blank" rel="noopener noreferrer" aria-label="Abrir Motupe en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="10" data-region="Norte" data-city="Ferreñafe" data-lat="-6.638890" data-lng="-79.788890" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">10</span>
+              <h3>Ferrenafe Sucre</h3>
+              <p class="location-city">Ferreñafe · Lambayeque · Región Norte</p>
+              <address>Sucre 118</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Ferrenafe Sucre en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.638890%2C-79.788890" target="_blank" rel="noopener noreferrer" aria-label="Abrir Ferrenafe Sucre en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="11" data-region="Norte" data-city="Ferreñafe" data-lat="-6.626688" data-lng="-79.789438" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">11</span>
+              <h3>Ferrenafe HS</h3>
+              <p class="location-city">Ferreñafe · Lambayeque · Región Norte</p>
+              <address>96F6+86X</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Ferrenafe HS en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.626688%2C-79.789438" target="_blank" rel="noopener noreferrer" aria-label="Abrir Ferrenafe HS en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="12" data-region="Norte" data-city="Ferreñafe" data-lat="-6.646563" data-lng="-79.793688" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">12</span>
+              <h3>Ferrenafe 2</h3>
+              <p class="location-city">Ferreñafe · Lambayeque · Región Norte</p>
+              <address>9634+9GP</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Ferrenafe 2 en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.646563%2C-79.793688" target="_blank" rel="noopener noreferrer" aria-label="Abrir Ferrenafe 2 en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="13" data-region="Sur" data-city="El Porvenir, Trujillo" data-lat="-8.083330" data-lng="-79.000000" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">13</span>
+              <h3>El Porvenir</h3>
+              <p class="location-city">El Porvenir, Trujillo · La Libertad · Región Sur</p>
+              <address>Hermanos Angulo 740</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver El Porvenir en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-8.083330%2C-79.000000" target="_blank" rel="noopener noreferrer" aria-label="Abrir El Porvenir en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="14" data-region="Sur" data-city="La Esperanza, Trujillo" data-lat="-8.064901" data-lng="-79.081529" data-precision="PIN">
+              <span class="location-number" aria-hidden="true">14</span>
+              <h3>La Esperanza</h3>
+              <p class="location-city">La Esperanza, Trujillo · La Libertad · Región Sur</p>
+              <address>Santa Rosa 269</address>
+              <p class="location-precision">Pin proporcionado</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver La Esperanza en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-8.064901%2C-79.081529" target="_blank" rel="noopener noreferrer" aria-label="Abrir La Esperanza en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="15" data-region="Sur" data-city="Huamachuco" data-lat="-7.812083" data-lng="-78.048694" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">15</span>
+              <h3>Huamachuco Jr Lara</h3>
+              <p class="location-city">Huamachuco · La Libertad · Región Sur</p>
+              <address>Jr. Lara 386</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Huamachuco Jr Lara en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-7.812083%2C-78.048694" target="_blank" rel="noopener noreferrer" aria-label="Abrir Huamachuco Jr Lara en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="16" data-region="Sur" data-city="Huamachuco" data-lat="-7.812083" data-lng="-78.048694" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">16</span>
+              <h3>Huamachuco Gonzales Prada</h3>
+              <p class="location-city">Huamachuco · La Libertad · Región Sur</p>
+              <address>Manuel Gonzales Prada</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Huamachuco Gonzales Prada en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-7.812083%2C-78.048694" target="_blank" rel="noopener noreferrer" aria-label="Abrir Huamachuco Gonzales Prada en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="17" data-region="Sur" data-city="Trujillo" data-lat="-8.097600" data-lng="-79.020690" data-precision="DIRECCION">
+              <span class="location-number" aria-hidden="true">17</span>
+              <h3>Piedras Vivas Trujillo</h3>
+              <p class="location-city">Trujillo · La Libertad · Región Sur</p>
+              <address>Manuel Encinas 133</address>
+              <p class="location-precision">Referencia de dirección</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Piedras Vivas Trujillo en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-8.097600%2C-79.020690" target="_blank" rel="noopener noreferrer" aria-label="Abrir Piedras Vivas Trujillo en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="18" data-region="Sur" data-city="Chicama" data-lat="-7.864188" data-lng="-79.136313" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">18</span>
+              <h3>Chicama</h3>
+              <p class="location-city">Chicama · La Libertad · Región Sur</p>
+              <address>4VP7+8F9 - Calle San Martin</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Chicama en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-7.864188%2C-79.136313" target="_blank" rel="noopener noreferrer" aria-label="Abrir Chicama en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="19" data-region="Sur" data-city="El Agustino, Lima" data-lat="-12.031540" data-lng="-77.003100" data-precision="OSM">
+              <span class="location-number" aria-hidden="true">19</span>
+              <h3>El Agustino Lima</h3>
+              <p class="location-city">El Agustino, Lima · Lima · Región Sur</p>
+              <address>Av. 1 de Mayo 3321</address>
+              <p class="location-precision">Referencia OSM</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver El Agustino Lima en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-12.031540%2C-77.003100" target="_blank" rel="noopener noreferrer" aria-label="Abrir El Agustino Lima en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="20" data-region="Sur" data-city="San Antonio de Chaclla" data-lat="-11.927563" data-lng="-76.967688" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">20</span>
+              <h3>San Antonio de Chaclla</h3>
+              <p class="location-city">San Antonio de Chaclla · Lima · Región Sur</p>
+              <address>32CJ+XW5 - Lloque Yupanqui</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver San Antonio de Chaclla en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-11.927563%2C-76.967688" target="_blank" rel="noopener noreferrer" aria-label="Abrir San Antonio de Chaclla en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="21" data-region="Nor Oriente" data-city="Jaén" data-lat="-5.707290" data-lng="-78.807850" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">21</span>
+              <h3>Jaen Sanchez Carrion</h3>
+              <p class="location-city">Jaén · Cajamarca · Región Nor Oriente</p>
+              <address>Sanchez Carrion 637</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Jaen Sanchez Carrion en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-5.707290%2C-78.807850" target="_blank" rel="noopener noreferrer" aria-label="Abrir Jaen Sanchez Carrion en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="22" data-region="Nor Oriente" data-city="Jaén" data-lat="-5.709438" data-lng="-78.798563" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">22</span>
+              <h3>Jaen 2</h3>
+              <p class="location-city">Jaén · Cajamarca · Región Nor Oriente</p>
+              <address>76R2+6H6</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Jaen 2 en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-5.709438%2C-78.798563" target="_blank" rel="noopener noreferrer" aria-label="Abrir Jaen 2 en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="23" data-region="Nor Oriente" data-city="Jaén" data-lat="-5.713828" data-lng="-78.799328" data-precision="PIN">
+              <span class="location-number" aria-hidden="true">23</span>
+              <h3>Maranatha Jaen</h3>
+              <p class="location-city">Jaén · Cajamarca · Región Nor Oriente</p>
+              <address>75RX+JWM - Fernando Belaunde Terry</address>
+              <p class="location-precision">Pin proporcionado</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Maranatha Jaen en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-5.713828%2C-78.799328" target="_blank" rel="noopener noreferrer" aria-label="Abrir Maranatha Jaen en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="24" data-region="Nor Oriente" data-city="Bagua" data-lat="-5.639090" data-lng="-78.531730" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">24</span>
+              <h3>Bagua</h3>
+              <p class="location-city">Bagua · Amazonas · Región Nor Oriente</p>
+              <address>Av. Circunvalacion Mz.53 Lt.5</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Bagua en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-5.639090%2C-78.531730" target="_blank" rel="noopener noreferrer" aria-label="Abrir Bagua en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="25" data-region="Nor Oriente" data-city="Cumba" data-lat="-5.935660" data-lng="-78.664070" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">25</span>
+              <h3>Cumba</h3>
+              <p class="location-city">Cumba · Amazonas · Región Nor Oriente</p>
+              <address>Av. Progreso 709-738</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Cumba en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-5.935660%2C-78.664070" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cumba en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="26" data-region="Oriente" data-city="Moyobamba" data-lat="-6.034410" data-lng="-76.974230" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">26</span>
+              <h3>Moyobamba</h3>
+              <p class="location-city">Moyobamba · San Martin · Región Oriente</p>
+              <address>Av. Grau 773</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Moyobamba en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.034410%2C-76.974230" target="_blank" rel="noopener noreferrer" aria-label="Abrir Moyobamba en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="27" data-region="Oriente" data-city="Rioja" data-lat="-6.056750" data-lng="-77.166510" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">27</span>
+              <h3>Rioja</h3>
+              <p class="location-city">Rioja · San Martin · Región Oriente</p>
+              <address>Jr. Amazonas 146</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Rioja en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.056750%2C-77.166510" target="_blank" rel="noopener noreferrer" aria-label="Abrir Rioja en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="28" data-region="Oriente" data-city="Soritor" data-lat="-6.143688" data-lng="-77.106188" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">28</span>
+              <h3>Soritor 1</h3>
+              <p class="location-city">Soritor · San Martin · Región Oriente</p>
+              <address>VV4V+GGM</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Soritor 1 en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.143688%2C-77.106188" target="_blank" rel="noopener noreferrer" aria-label="Abrir Soritor 1 en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="29" data-region="Oriente" data-city="Soritor" data-lat="-6.208313" data-lng="-77.061188" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">29</span>
+              <h3>Soritor 2</h3>
+              <p class="location-city">Soritor · San Martin · Región Oriente</p>
+              <address>QWRQ+MG5</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Soritor 2 en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.208313%2C-77.061188" target="_blank" rel="noopener noreferrer" aria-label="Abrir Soritor 2 en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="30" data-region="Nor Andina" data-city="Bambamarca" data-lat="-6.695188" data-lng="-78.539313" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">30</span>
+              <h3>Bambamarca</h3>
+              <p class="location-city">Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>8F36+W7Q</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Bambamarca en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.695188%2C-78.539313" target="_blank" rel="noopener noreferrer" aria-label="Abrir Bambamarca en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="31" data-region="Nor Andina" data-city="Bambamarca" data-lat="-6.609813" data-lng="-78.565063" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">31</span>
+              <h3>El Lirio</h3>
+              <p class="location-city">Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>9CRM+3XH</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver El Lirio en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.609813%2C-78.565063" target="_blank" rel="noopener noreferrer" aria-label="Abrir El Lirio en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="32" data-region="Nor Andina" data-city="Bambamarca" data-lat="-6.679588" data-lng="-78.519210" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">32</span>
+              <h3>San Jose del Obelisco</h3>
+              <p class="location-city">Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>Jr. San Martin de Porres 1219</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver San Jose del Obelisco en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.679588%2C-78.519210" target="_blank" rel="noopener noreferrer" aria-label="Abrir San Jose del Obelisco en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="33" data-region="Nor Andina" data-city="Agomarca Bajo, Bambamarca" data-lat="-6.692510" data-lng="-78.533100" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">33</span>
+              <h3>Agomarca Bajo</h3>
+              <p class="location-city">Agomarca Bajo, Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>Agomarca Bajo</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Agomarca Bajo en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.692510%2C-78.533100" target="_blank" rel="noopener noreferrer" aria-label="Abrir Agomarca Bajo en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="34" data-region="Nor Andina" data-city="Jorge Chávez, Bambamarca" data-lat="-6.679563" data-lng="-78.520063" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">34</span>
+              <h3>Jorge Chavez</h3>
+              <p class="location-city">Jorge Chávez, Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>8FCH+5XM</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Jorge Chavez en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.679563%2C-78.520063" target="_blank" rel="noopener noreferrer" aria-label="Abrir Jorge Chavez en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="35" data-region="Nor Andina" data-city="Maygasbamba Alto, Bambamarca" data-lat="-6.662938" data-lng="-78.532063" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">35</span>
+              <h3>Maygasbamba Alto</h3>
+              <p class="location-city">Maygasbamba Alto, Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>8FP9+R5</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Maygasbamba Alto en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.662938%2C-78.532063" target="_blank" rel="noopener noreferrer" aria-label="Abrir Maygasbamba Alto en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="36" data-region="Nor Andina" data-city="Bambamarca" data-lat="-6.644063" data-lng="-78.549188" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">36</span>
+              <h3>Bambamarca 2</h3>
+              <p class="location-city">Bambamarca · Cajamarca · Región Nor Andina</p>
+              <address>9F42+98P</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Bambamarca 2 en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.644063%2C-78.549188" target="_blank" rel="noopener noreferrer" aria-label="Abrir Bambamarca 2 en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="37" data-region="Nor Andina" data-city="Cajamarca" data-lat="-7.163977" data-lng="-78.512698" data-precision="PIN">
+              <span class="location-number" aria-hidden="true">37</span>
+              <h3>Cajamarca Ciudad</h3>
+              <p class="location-city">Cajamarca · Cajamarca · Región Nor Andina</p>
+              <address>Jr. Los Gladiolos 227</address>
+              <p class="location-precision">Pin proporcionado</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Cajamarca Ciudad en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-7.163977%2C-78.512698" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cajamarca Ciudad en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="38" data-region="Nor Andina" data-city="Cutervo" data-lat="-6.454938" data-lng="-78.838313" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">38</span>
+              <h3>Cutervo</h3>
+              <p class="location-city">Cutervo · Cajamarca · Región Nor Andina</p>
+              <address>G5W6+2M9</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Cutervo en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.454938%2C-78.838313" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cutervo en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="39" data-region="Nor Andina" data-city="Cashapampa Alto" data-lat="-6.743398" data-lng="-78.522611" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">39</span>
+              <h3>Cashapampa Alto</h3>
+              <p class="location-city">Cashapampa Alto · Cajamarca · Región Nor Andina</p>
+              <address>Cashapampa Alto</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Cashapampa Alto en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.743398%2C-78.522611" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cashapampa Alto en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="40" data-region="Nor Andina" data-city="Sócota, Cutervo" data-lat="-6.315357" data-lng="-78.699620" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">40</span>
+              <h3>Socota</h3>
+              <p class="location-city">Sócota, Cutervo · Cajamarca · Región Nor Andina</p>
+              <address>Socota - Cutervo</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Socota en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-6.315357%2C-78.699620" target="_blank" rel="noopener noreferrer" aria-label="Abrir Socota en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="41" data-region="Ucayali" data-city="Pucallpa" data-lat="-8.379150" data-lng="-74.553870" data-precision="APROX_LOCALIDAD">
+              <span class="location-number" aria-hidden="true">41</span>
+              <h3>Pucallpa Salvador Allende</h3>
+              <p class="location-city">Pucallpa · Ucayali · Región Ucayali</p>
+              <address>Av. Salvador Allende 190</address>
+              <p class="location-precision">Ubicación aproximada de la localidad</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Pucallpa Salvador Allende en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-8.379150%2C-74.553870" target="_blank" rel="noopener noreferrer" aria-label="Abrir Pucallpa Salvador Allende en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <article class="location-entry" data-number="42" data-region="Ucayali" data-city="Pucallpa" data-lat="-8.411563" data-lng="-74.558063" data-precision="PLUS_CODE">
+              <span class="location-number" aria-hidden="true">42</span>
+              <h3>Pucallpa 15 de Febrero</h3>
+              <p class="location-city">Pucallpa · Ucayali · Región Ucayali</p>
+              <address>HCQR+9QF</address>
+              <p class="location-precision">Punto según Plus Code</p>
+              <div class="location-actions"><button type="button" aria-pressed="false" aria-label="Ver Pucallpa 15 de Febrero en el mapa">Ver en mapa</button><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-8.411563%2C-74.558063" target="_blank" rel="noopener noreferrer" aria-label="Abrir Pucallpa 15 de Febrero en Google Maps">Abrir en Google Maps</a></div>
+            </article>
+            <div class="locations-empty" hidden><p>No encontramos sedes con esos filtros. Prueba otra localidad o selecciona todas las regiones.</p><button type="button" data-clear-locations>Limpiar búsqueda</button></div>
+            </div>
+          </div>
+        </div>
+        <noscript><p>El mapa y los filtros necesitan JavaScript. Puedes consultar las 42 sedes en el directorio y abrir sus direcciones en Google Maps.</p></noscript>
+      </section>
