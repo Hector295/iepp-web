@@ -16,3 +16,6 @@ dist/
 *.tsbuildinfo
 playwright-report/
 test-results/
+
+# Documentación técnica local
+/NOTAS-TECNICAS.local.md

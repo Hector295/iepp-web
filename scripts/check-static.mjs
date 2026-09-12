@@ -11,6 +11,35 @@ assert.ok(!/<base\b/i.test(html), 'No se debe añadir un prefijo de repositorio 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(ids.length, new Set(ids).size, 'IDs HTML duplicados.');
 
+// Comprobar el HTML publicado, no solo la configuración de Astro.
+assert.ok(html.includes(`<link rel="canonical" href="${origin}">`), 'Canonical incorrecta.');
+assert.equal((html.match(/<h1\b/g) || []).length, 1, 'Debe haber un único título principal.');
+for (const key of ['description', 'robots', 'og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
+  const content = html.match(new RegExp(`<meta (?:name|property)="${key}" content="([^"]+)"`))?.[1];
+  assert.ok(content, `Falta el metadato ${key}.`);
+  if (key === 'robots') assert.ok(!/noindex|nofollow/.test(content), 'La página debe permitir indexación.');
+  if (key === 'og:url') assert.equal(content, origin);
+  if (key === 'og:image') {
+    const image = new URL(content);
+    assert.equal(image.origin, new URL(origin).origin);
+    await stat(new URL(image.pathname.slice(1), source));
+  }
+}
+const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1] || 'null');
+assert.equal(schema?.['@context'], 'https://schema.org');
+for (const type of ['Organization', 'WebSite', 'WebPage']) {
+  assert.equal(schema['@graph'].find(item => item['@type'] === type)?.url, origin, `Falta schema ${type}.`);
+}
+const organization = schema['@graph'].find(item => item['@type'] === 'Organization');
+assert.ok(html.includes(`mailto:${organization.email}`), 'El correo de schema debe coincidir con el contacto visible.');
+assert.ok(html.includes(`tel:${organization.telephone}`), 'El teléfono de schema debe coincidir con el contacto visible.');
+assert.ok(/<section\b[^>]*id="noticias"[^>]*data-nosnippet/.test(html), 'Excluir noticias de muestra de los extractos.');
+const robots = await readFile(new URL('robots.txt', source), 'utf8');
+assert.ok(robots.includes(`Sitemap: ${origin}sitemap.xml`), 'Sitemap ausente de robots.txt.');
+assert.ok(!/^Disallow:\s*\/\s*$/m.test(robots), 'robots.txt bloquea el sitio.');
+const sitemap = await readFile(new URL('sitemap.xml', source), 'utf8');
+assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]), [origin], 'El sitemap debe contener la página real, sin anclas ni prefijo de repositorio.');
+
 async function checkReference(value, base = origin) {
   if (/^(?:https?:|data:|mailto:|tel:|\/\/)/i.test(value)) return;
   const url = new URL(value.replaceAll('&amp;', '&'), base);
@@ -40,4 +69,4 @@ async function checkDirectory(relative = '') {
   }
 }
 await checkDirectory();
-console.log('OK: sintaxis JavaScript, assets locales, anclas, rutas en raíz y CNAME.');
+console.log('OK: JavaScript, assets, anclas, rutas, CNAME, metadatos SEO, JSON-LD, robots y sitemap.');

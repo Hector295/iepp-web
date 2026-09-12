@@ -1,3 +1,4 @@
+      document.querySelector('[data-current-year]').textContent = String(new Date().getFullYear());
       const menu = document.querySelector('[data-menu]');
       const nav = document.querySelector('[data-nav]');
       const mobile = matchMedia('(max-width: 1200px)');
