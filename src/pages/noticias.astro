@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import News from '../components/News.astro';
+
+const title = 'Noticias | Iglesia Evangélica de los Peregrinos del Perú';
+const description = 'Novedades y publicaciones de la Iglesia Evangélica de los Peregrinos del Perú. Síguenos en Facebook para conocer las últimas noticias.';
+---
+<BaseLayout path="/noticias" title={title} description={description}>
+  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <News />
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import History from '../components/History.astro';
+
+const title = 'Nuestra historia | Iglesia Evangélica de los Peregrinos del Perú';
+const description = 'Desde 1904 en Chiclayo hasta hoy: la historia de la Iglesia Evangélica de los Peregrinos del Perú, su herencia de santidad wesleyana y su camino en el Perú.';
+---
+<BaseLayout path="/historia" title={title} description={description} image="/assets/jesus-peregrino-scroll.jpg" imageAlt="Representación ilustrativa de Jesús y un camino hacia tres cruces al amanecer">
+  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <History />
+</BaseLayout>

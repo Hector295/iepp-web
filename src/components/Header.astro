@@ -1,5 +1,8 @@
+---
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
 <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Iglesia Evangélica de los Peregrinos del Perú, inicio">
+      <a class="brand" href="/" aria-current={currentPath === '/' ? 'page' : undefined} aria-label="Iglesia Evangélica de los Peregrinos del Perú, inicio">
         <img class="brand-mark" src="/assets/logo-peregrinos-original.png" alt="" />
         <span class="brand-name"><span>IGLESIA EVANGÉLICA DE LOS</span><span>PEREGRINOS DEL PERÚ</span></span>
       </a>
@@ -9,10 +12,12 @@
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navegación principal" data-nav>
-        <a href="#noticias">Noticias</a>
-        <a href="#historia">Historia</a>
-        <a href="#organizacion">Organización</a>
-        <a href="#ministerios">Ministerios</a>
-        <a class="nav-cta" href="#sedes">Visítanos</a>
+        <a href="/#identidad">Nosotros</a>
+        <a href="/confesion-de-fe" aria-current={currentPath === '/confesion-de-fe' ? 'page' : undefined}>Nuestra fe</a>
+        <a href="/historia" aria-current={currentPath === '/historia' ? 'page' : undefined}>Historia</a>
+        <a href="/organizacion" aria-current={currentPath === '/organizacion' ? 'page' : undefined}>Organización</a>
+        <a href="/noticias" aria-current={currentPath === '/noticias' ? 'page' : undefined}>Noticias</a>
+        <a href="/#sedes">Sedes</a>
+        <a class="nav-cta" href="/#sedes">Visítanos</a>
       </nav>
     </header>

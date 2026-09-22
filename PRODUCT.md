@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/, build en out/ y despliegue mediante GitHub Actions a iepp.velifatech.com.
+Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/ y build en out/. GitHub Pages aloja iepp.velifatech.com y GitHub Actions publica los cambios de main. La migración a iepp.pe queda documentada y pendiente; el correo conserva su proveedor actual.
 
 ## Users
 
@@ -24,11 +24,12 @@ Una Iglesia de Santidad de herencia wesleyana, expresada como una comunidad de p
 
 ## Capabilities and Constraints
 
-- Una experiencia pública, narrativa y responsive.
-- Navegación a Historia, Organización, Ministerios y Sedes.
-- La llamada principal es «Visítanos» y conduce a las sedes.
+- Una experiencia pública, narrativa y responsive, distribuida en varias páginas para aliviar el SEO y el peso de la portada.
+- La portada (`/`) atiende por igual a visitantes y miembros: bienvenida, identidad y fe, y sedes.
+- Historia (`/historia`), Confesión de Fe (`/confesion-de-fe`), Organización con Departamentos (`/organizacion`) y Noticias (`/noticias`) son páginas propias, enlazadas desde el menú fijo y el pie.
+- La llamada principal es «Visítanos» y conduce a las sedes; el menú también ofrece «Sedes» como enlace directo.
 - No inventar fechas, nombres, direcciones, horarios, cifras ni testimonios.
-- Los datos concretos de sedes y autoridades quedan pendientes de contenido oficial.
+- Los nombres de autoridades reflejan el directorio publicado por IEPP, que no indica periodos de gestión; su vigencia debe confirmarse antes de publicar.
 
 ## Brand Commitments
 
@@ -36,12 +37,15 @@ Una Iglesia de Santidad de herencia wesleyana, expresada como una comunidad de p
 - Frase doctrinal: «Somos una Iglesia de Santidad de herencia wesleyana.»
 - Dirección aprobada: azul noche, marfil y dorado cálido; fotografía cinematográfica; tono premium, reverente y acogedor.
 - La identidad visual existente incluye cruz, globo, llama y Biblia abierta.
+- Conservar el logo oficial y el video de la sección Historia por petición expresa del usuario. El hero de la portada usa un carrusel de 12 fotos reales de la comunidad (no imágenes generadas) provistas por el usuario. Priorizar lectura cómoda y un tono cercano, informativo y acogedor.
 
 ## Evidence on Hand
 
 - Referencias visuales aportadas por el usuario en `/tmp`.
 - Hero aprobado en la conversación como autoridad visual.
-- No se proporcionaron datos oficiales de historia, autoridades, ministerios o sedes; la web debe solicitar o reservar esos contenidos sin fingir información.
+- Información de `iepp.pe` consultada directamente: visión, misión, historia, 18 artículos de fe, estructura institucional y contacto. Fuentes y límites documentados en `CONTENIDO.md`.
+- El directorio existente contiene 42 sedes; esta revisión solo confirma la dirección de la sede nacional, no las otras direcciones o coordenadas.
+- El usuario aportó 12 fotografías reales de actividades de la Iglesia (asambleas, retiros pastorales, cultos, Santa Cena) para el carrusel del hero, sustituyendo el video con arte generado.
 
 ## Product Principles
 

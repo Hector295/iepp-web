@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Confession from '../components/Confession.astro';
+
+const title = 'Confesión de fe | Iglesia Evangélica de los Peregrinos del Perú';
+const description = 'Los 18 artículos de fe de la Iglesia Evangélica de los Peregrinos del Perú: nuestra confesión de herencia wesleyana sobre Dios, la salvación y la vida cristiana.';
+---
+<BaseLayout path="/confesion-de-fe" title={title} description={description}>
+  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <Confession />
+</BaseLayout>

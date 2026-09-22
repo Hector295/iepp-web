@@ -1,0 +1,201 @@
+---
+const articles = [
+  {
+    title: 'De Dios uno y trino',
+    paragraphs: [
+      'Creemos que hay un solo Dios, vivo y verdadero, el cual es eterno, sin cuerpo ni partes, Santo en su ser, atributos y propósitos, Creador y Conservador de todas las cosas visibles e invisibles. En la unidad de la Deidad hay tres Personas de una misma substancia, poder y eternidad: el Padre, el Hijo y el Espíritu Santo.',
+    ],
+  },
+  {
+    title: 'De Jesucristo',
+    paragraphs: [
+      'Creemos en el Hijo, que es el Verbo del Padre, verdadero y eterno Dios, y de una misma substancia con el Padre.',
+      'Tomó la naturaleza humana en el vientre de la bienaventurada Virgen de manera que en Él hay dos naturalezas enteras y perfectas, a saber: la divina y la humana, se unieron en una sola persona, para jamás ser separadas, de la cual es un solo Cristo, verdadero Dios y verdadero hombre.',
+      'Cristo, verdaderamente padeció, fue crucificado, muerto y sepultado, para reconciliar a su Padre con nosotros y, para ser sacrificio, no solamente por la culpa original, sino también por los pecados personales de los seres humanos.',
+      'Cristo, verdaderamente resucitó de entre los muertos, volvió a tomar su cuerpo, con todo lo perteneciente a la perfección de la naturaleza humana, con el cual subió al cielo, y ahí está sentado a la diestra del Padre, para interceder por nosotros y volverá para juzgar a todas las personas en el día postrero.',
+    ],
+  },
+  {
+    title: 'Del Espíritu Santo',
+    paragraphs: [
+      'Creemos que el Espíritu Santo procede del Padre y del Hijo, es de la misma naturaleza, majestad y gloria del Padre y del Hijo, el mismo y eterno Dios.',
+      'Está en la iglesia, convence al mundo de pecado, justicia y juicio, regenera y guía al que cree y santifica al creyente.',
+    ],
+  },
+  {
+    title: 'De la suficiencia de las Sagradas Escrituras para la salvación',
+    paragraphs: [
+      'Creemos que las Sagradas Escrituras contienen todo lo que es necesario para la salvación, así que todo lo que no se lea allí ni pueda ser probado por ellas, no debe exigirse que se crea como un artículo de fe o como requisito necesario para la salvación.',
+      'Por Sagradas Escrituras entendemos los libros canónicos del Antiguo Testamento y Nuevo Testamento aceptados comúnmente y conocidos como la Biblia.',
+    ],
+  },
+  {
+    title: 'Del pecado original',
+    paragraphs: [
+      'Creemos que el Pecado Original no consiste en la imitación de Adán, sino que es la corrupción de la naturaleza de todo hombre y mujer que es engendrado(a) naturalmente de la estirpe de Adán.',
+      'Por lo cual el hombre y la mujer distan muchísimo de la justicia original y son por su misma naturaleza, inclinados al mal, y esto de continuo.',
+    ],
+  },
+  {
+    title: 'De la expiación',
+    paragraphs: [
+      'Creemos en la expiación como acto de la gracia de Dios efectuado por el sacrificio vicario de Cristo para borrar los pecados del mundo restableciendo las buenas relaciones con Dios, con los demás y la creación.',
+      'La expiación es benévolamente eficaz para la salvación de los que perdieron la razón desde el nacimiento, o de los justos que pierden la razón por enfermedad o por accidente, y para la salvación de los niños en su etapa de inocencia.',
+      'Para aquellos que llegan a la edad de la responsabilidad, la expiación es eficaz únicamente cuando se arrepienten y creen.',
+    ],
+  },
+  {
+    title: 'Del libre albedrío',
+    paragraphs: [
+      'Confesamos que el ser humano tiene la capacidad de libre elección del bien y del mal.',
+      'Sin embargo, la condición del ser humano después de la caída es tal que, aunque pueda cumplir con sus deberes ciudadanos, no está en la posibilidad de salvarse a sí mismo y servir a Dios de la manera como él lo exige.',
+    ],
+  },
+  {
+    title: 'De la justificación',
+    paragraphs: [
+      'Confesamos la Justificación por la fe como obra de gracia libre de Dios, mediante la cual perdona nuestros pecados y nos acepta como justos por el amor de Dios.',
+      'Las personas que alcanzan la justificación ya son justas por y en Cristo: Su justicia significa buena relación con Dios y con las demás personas.',
+      'La justicia produce la paz, promueve bienestar en la comunidad, obra por el amor.',
+      'La conversión de toda persona es el milagro en el que simultáneamente ocurren la justificación, la regeneración y la adopción; siendo posteriormente confirmada por el testimonio del Espíritu Santo.',
+    ],
+  },
+  {
+    title: 'De la santificación',
+    paragraphs: [
+      'Creemos en la Santificación como obra de gracia divina, por la cual llegamos a ser santos.',
+      'Después de la justificación, el Espíritu Santo instantáneamente, santifica el corazón limpiándolo de todo pecado y llenándolo de la plenitud de su presencia.',
+      'El resultado de esta bendita obra es la completa obediencia, el perfecto amor y una vida de poder para la misión integral.',
+      'La santidad es santidad interior o santidad del corazón y, santidad exterior o santidad de la vida o santidad social.',
+    ],
+  },
+  {
+    title: 'De las buenas obras y del servicio',
+    paragraphs: [
+      'Creemos que las buenas obras son fruto de la fe y siguen a la justificación: pero no pueden librarnos de nuestros pecados ni pueden soportar la severidad de los juicios de Dios.',
+      'Sin embargo, ellas son agradables y aceptas delante de Dios por medio de Cristo, de modo que por ellas se puede conocer la fe viva, tan evidentemente como se conoce el árbol por su fruto.',
+      'Todo discípulo y toda discípula de Cristo, por amor y obediencia, sirven al prójimo espontánea y libremente.',
+      'Cuida el medio ambiente como ejercicio de mayordomía responsable.',
+    ],
+  },
+  {
+    title: 'Del pecado después de la justificación',
+    paragraphs: [
+      'Creemos que después de haber sido regenerados se puede caer en pecado, pues, en esta vida no hay tal altura ni estado de santidad de la cual no sea posible caer.',
+      'Sólo por la gracia de Dios, quien haya caído en pecado, mediante el verdadero arrepentimiento y fe, puede encontrar el perdón y la restauración.',
+    ],
+  },
+  {
+    title: 'De la iglesia',
+    paragraphs: [
+      'Creemos que la iglesia es el cuerpo de Cristo, la comunidad que confiesa a Jesucristo como Señor y Salvador, el pueblo de Dios que le adora y le sirve.',
+      'La iglesia es una, santa, universal y apostólica.',
+      'La iglesia está compuesta por aquellos que han sido llamados a celebrar el culto al Señor y los pastores y pastoras en el nombre de Cristo, ministran los sacramentos como medios de gracia.',
+      'La iglesia tiene la misión de anunciar todo el evangelio de Dios a toda persona; de formar discípulos responsables; de servir a los necesitados, y de ser comunidad del Reino por la presencia del Espíritu Santo, quien le imparte una diversidad de dones.',
+      'Su campo de acción es el mundo, constituido por todas las personas y su medio ambiente.',
+    ],
+  },
+  {
+    title: 'Del hablar en la congregación en una lengua que todos entiendan',
+    paragraphs: [
+      'Creemos que al predicar, al hacer oración en público o al administrar los sacramentos, debemos hablar en la congregación en un idioma y lenguaje que todos entiendan, respetando y valorando la lengua de las otras culturas.',
+      'La manifestación de las lenguas como evidencia de la llenura del Espíritu Santo, no es una prueba escritural fehaciente; porque según las Sagradas Escrituras, el hablar en lenguas es un don del Espíritu.',
+      'Por lo tanto, esta gracia queda reservada a la oración privada de cada creyente.',
+    ],
+  },
+  {
+    title: 'De los sacramentos',
+    paragraphs: [
+      'Creemos que los sacramentos ordenados por Cristo son señales y signos de la gracia y de la buena voluntad de Dios hacia nosotros, por medio de los cuales vivifican, fortalecen y confirman nuestra fe en Él.',
+      'Deben administrarse y recibirse dignamente.',
+      { heading: 'El bautismo', text: 'Es una señal exterior de la obra del Espíritu Santo en el corazón humano. Aceptamos el bautismo por inmersión y aspersión. Creemos que el bautismo con agua es un sacramento de la iglesia, ordenado por Cristo para ser administrado a quienes han creído que Cristo es su Señor. Es un símbolo del nuevo pacto de gracia y significa nuestra aceptación de los beneficios de la expiación de Cristo. Por medio de este sacramento el creyente declara su fe en Jesucristo como su Señor y Salvador. Se conservará en la iglesia el bautismo de los niños.' },
+      { heading: 'La Cena del Señor', text: 'Es un sacramento por medio del cual el cuerpo y la sangre de Cristo son entregados, tomados y comidos sólo de una manera espiritual y simbólica. Creemos que sus beneficios solamente alcanzan a los que, con limpia conciencia, participan con fe de los elementos materiales del pan y del vino. Este sacramento representa nuestra redención por medio de la sangre de Cristo y nuestra nutrición espiritual por medio de su cuerpo.' },
+    ],
+  },
+  {
+    title: 'De la sanidad',
+    paragraphs: [
+      'Creemos y aceptamos la doctrina de la sanidad del cuerpo, que es un privilegio de todo hijo de Dios, ser sanado en respuesta a la oración de fe.',
+      'Aceptamos la medicina como medio de gracia para sanar, para prevenir y conservar la salud.',
+    ],
+  },
+  {
+    title: 'Del gobierno civil',
+    paragraphs: [
+      'Creemos que en lo que respecta a los asuntos civiles, creemos que es deber de todo cristiano, someterse a la autoridad justa del país donde residan, y usar de todos los medios legítimos para promover la obediencia a las autoridades legítimamente constituidas y la justicia y el bienestar para todos.',
+      'Los cristianos pueden participar del poder civil sin descuidar su buen testimonio.',
+    ],
+  },
+  {
+    title: 'De la venida de Jesús y la resurrección',
+    paragraphs: [
+      'Creemos que el Reino de Dios es una realidad presente y futura.',
+      'Como realidad presente nos invita a construir relaciones de justicia y paz.',
+      'Como realidad futura, nos invita a tener esperanza en la instauración definitiva del orden de Dios en la historia y su consumación.',
+      'Creemos que la certeza y regreso personal de Cristo es una inspiración para vivir santamente, para ocuparnos celosamente en la evangelización del mundo y para estar atentos y preparados a fin de que no nos sorprenda la venida del Señor.',
+      'Cuando él regrese cumplirá toda profecía hecha referente a su triunfo final y completo sobre el mal.',
+      'Sólo Dios Padre sabe cuándo volverá el Señor Jesús y nadie más; Él volverá en cualquier momento.',
+      'Cuando aparezca el Hijo del hombre, resucitarán los muertos: los justos y los injustos.',
+      'Los justos que viven al momento de la segunda venida del Cristo, serán transformados en cuerpos glorificados.',
+      'Luego, los que murieron y resucitaron en Cristo; juntamente con los justos serán arrebatados e irán a recibir al Señor.',
+    ],
+  },
+  {
+    title: 'Del juicio y el destino eterno',
+    paragraphs: [
+      'Creemos que las Sagradas Escrituras revelan a Dios como el Juez de toda la humanidad, que sus juicios se basan en su omnisciencia.',
+      'Su administración de justicia culminará en la reunión final del género humano delante de su trono de gran majestad y poder, donde los libros serán abiertos y las recompensas y castigos finales serán administrados.',
+      'Las Sagradas Escrituras enseñan claramente la existencia consciente y personal después de la muerte.',
+      'El destino final del ser humano está determinado por la gracia de Dios y la respuesta del ser humano, la que se evidencia inevitablemente por su carácter moral que resulta de sus elecciones libres y personales; su destino eterno no está determinado por ningún decreto arbitrario de Dios.',
+      'El cielo con su eterna gloria y las bendiciones de la presencia de Cristo es la morada final de aquellos que eligen la salvación que Dios provee por medio de Jesucristo.',
+      'El infierno con su miseria eterna y separación de Dios es la morada final de quienes descuidan aquella gran salvación.',
+    ],
+  },
+];
+---
+<section id="confesion" class="confession history-archive section-shell" aria-labelledby="confession-title">
+  <div class="section-heading">
+    <h1 id="confession-title">La fe que<br /><i>compartimos.</i></h1>
+    <div><p>Creemos en el Padre, el Hijo y el Espíritu Santo; en la salvación por la fe en Jesucristo y en una vida transformada para amar y servir.</p><p>Nuestra confesión de fe se expresa en 18 artículos. Explora las tarjetas o elige un artículo en el índice para leer su texto completo.</p></div>
+  </div>
+  <details class="faith-index history-document">
+    <summary>Índice de los 18 artículos</summary>
+    <nav id="indice-fe" aria-label="Índice de la confesión de fe">
+      <ol>
+        {articles.map((article, index) => <li><a href={`#articulo-${index + 1}`}>{article.title}</a></li>)}
+      </ol>
+    </nav>
+  </details>
+  <div class="faith-carousel" data-faith-carousel>
+    <div class="faith-carousel-toolbar">
+      <button type="button" data-faith-prev aria-label="Artículo de fe anterior" disabled>‹</button>
+      <button type="button" data-faith-next aria-label="Artículo de fe siguiente">›</button>
+    </div>
+    <ol class="faith-carousel-track" aria-label="Los 18 artículos de fe" tabindex="0">
+      {articles.map((article, index) => (
+        <li class="faith-article" data-number={String(index + 1).padStart(2, '0')}>
+          <span class="faith-article-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+          <h2>{article.title}</h2>
+          <p class="faith-article-excerpt">{article.paragraphs[0]}</p>
+          <a class="text-link text-link-dark" href={`#articulo-${index + 1}`} aria-label={`Leer completo: ${article.title}`}>Leer completo <span aria-hidden="true">→</span></a>
+        </li>
+      ))}
+    </ol>
+  </div>
+  <details class="faith-reading history-document">
+    <summary>Leer la confesión de fe completa</summary>
+    <div class="history-document-body">
+      {articles.map((article, index) => (
+        <article aria-labelledby={`articulo-${index + 1}`}>
+          <h2 id={`articulo-${index + 1}`} tabindex="-1">{index + 1}. {article.title}</h2>
+          {article.paragraphs.map(paragraph => (
+            typeof paragraph === 'string'
+              ? <p>{paragraph}</p>
+              : <><h3>{paragraph.heading}</h3><p>{paragraph.text}</p></>
+          ))}
+          <a class="text-link text-link-dark" href="#indice-fe">Volver al índice ↑</a>
+        </article>
+      ))}
+    </div>
+  </details>
+</section>

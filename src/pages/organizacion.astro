@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Organization from '../components/Organization.astro';
+
+const title = 'Organización | Iglesia Evangélica de los Peregrinos del Perú';
+const description = 'Concilio, seis presbiterios, departamentos, órganos internos y Consejo Ministerial de la Iglesia Evangélica de los Peregrinos del Perú.';
+---
+<BaseLayout path="/organizacion" title={title} description={description}>
+  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <Organization />
+
+  <section id="ministerios" class="ministries" aria-labelledby="ministries-title">
+    <div class="ministry-content">
+      <h2 id="ministries-title">Departamentos<br /><i>al servicio.</i></h2>
+      <p>Cuatro áreas acompañan la labor de la Iglesia.</p>
+      <ul class="ministry-areas" aria-label="Departamentos de la IEPP">
+        <li><h3>Misión y Evangelismo</h3><p>Ps. Arístides Chumacero Córdova</p></li>
+        <li><h3>Educación</h3><p>Ps. Jorge Humberto Lavado Miranda</p></li>
+        <li><h3>Comunicaciones</h3><p>Ps. Carlos Héctor Campos Cruzado</p></li>
+        <li><h3>Diaconía</h3><p>Ps. Gonzalo Salirrosas Malla</p></li>
+      </ul>
+      <p class="directory-note">Responsables del directorio publicado por la IEPP, sin periodo de gestión indicado.</p>
+      <a class="text-link text-link-dark" href="#contacto">Consulta cómo participar <span class="arrow" aria-hidden="true"></span></a>
+    </div>
+    <figure class="ministry-photo"><img src="/assets/lectura-biblica.jpg" width="1536" height="1024" alt="Escena ilustrativa de lectura de la Biblia a la luz de una ventana" loading="lazy" /><figcaption>Imagen ilustrativa de lectura bíblica.</figcaption></figure>
+  </section>
+</BaseLayout>

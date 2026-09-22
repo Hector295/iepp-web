@@ -28,7 +28,7 @@ const assert=require('node:assert/strict');
  await region.selectOption('');
  await search.fill('jaen');assert.equal(await items.count(),3,'Accent-insensitive city');
  await search.fill('  san  martin ');assert.ok(await items.count()>=4,'Multiple words and whitespace');
- await search.fill('608');assert.equal(await items.count(),1);assert.match(await items.textContent(),/608\/678/);
+ await search.fill('678');assert.equal(await items.count(),1);assert.match(await items.textContent(),/La Florida 678/);
  await search.fill('HCQR+9QF');assert.equal(await items.count(),1);
  await items.locator('button').click();await p.locator('.leaflet-popup').waitFor();assert.match(await p.locator('.leaflet-popup').textContent(),/15 de Febrero/);
  await search.fill('no-existe-iglesia');assert.equal(await items.count(),0);assert.ok(await p.locator('.locations-empty').isVisible());assert.ok(await p.locator('[data-fit-locations]').isDisabled());

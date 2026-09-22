@@ -1,5 +1,5 @@
 region,nombre,departamento,direccion,latitud,longitud,precision
-Norte,Sede Nacional Chiclayo,Lambayeque,"Ca. La Florida 608/678 - Urb. San Eduardo",-6.770080,-79.854950,APROX_LOCALIDAD
+Norte,Sede Nacional Chiclayo,Lambayeque,"Ca. La Florida 678, Urb. San Eduardo",-6.770080,-79.854950,APROX_LOCALIDAD
 Norte,San Antonio,Lambayeque,"Av. Alexander Von Humboldt 520 - Chiclayo",-6.778625,-79.862864,PIN
 Norte,La Victoria,Lambayeque,"55X5+W2R - La Victoria",-6.800188,-79.842438,PLUS_CODE
 Norte,Vista Alegre,Lambayeque,"Cruz de la Esperanza - Pradera 34 - Chiclayo",-6.770080,-79.854950,APROX_LOCALIDAD

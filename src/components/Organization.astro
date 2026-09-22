@@ -1,0 +1,54 @@
+---
+const council = [
+  ['Obispo', 'Rvdo. José Iván Rojas de la Cruz'],
+  ['Obispo auxiliar', 'Rvdo. Jorge Carlos Vásquez Salazar'],
+  ['Secretario', 'Rvdo. Abel Vásquez Vásquez'],
+  ['Tesorera', 'Rvda. Mercedes Asteria Narváez Bocanegra'],
+];
+const regions = [
+  ['Norte', 'Presb. Juan Chumacero Córdova', 'Lambayeque, Cutervo y Piura.'],
+  ['Sur', 'Presb. Félix Honorio Cuevas', 'Trujillo, Huamachuco, Santiago de Chuco y Cajabamba.'],
+  ['Nor Oriente', 'Presb. Noé Vega Huamán', 'Jaén, San Ignacio y Bagua.'],
+  ['Oriente', 'Presb. Rodolfo Pérez Silva', 'San Martín.'],
+  ['Nor Andina', 'Presb. Saúl Marín Walter', 'Hualgayoc-Bambamarca, Celendín, Chota y Cajamarca.'],
+  ['Ucayali', 'Presb. Germán Sangama Sangama', 'Pucallpa y la región Ucayali.'],
+];
+const internalBodies = [
+  ['Unión de Pastores', 'Ps. Demetrio Mariño Yupanqui'],
+  ['USJEPEP', 'Hna. Gina Yesenia Arribasplata Tenorio'],
+  ['USFEMIEP', 'Psa. Orpha Viana Ramos Dávila'],
+];
+---
+<section id="organizacion" class="structure section-shell" aria-labelledby="organization-title">
+  <div class="section-heading">
+    <h1 id="organization-title">Una Iglesia.<br /><i>Seis regiones.</i></h1>
+    <p>El Concilio gobierna y administra la IEPP. Reúne al Obispo, al Obispo auxiliar, al Secretario, a la Tesorera y a seis presbíteros.</p>
+  </div>
+  <details class="history-document organization-details">
+    <summary>Concilio y presbiterios</summary>
+    <h3 class="organization-heading">Concilio</h3>
+    <dl class="structure-path">
+      {council.map(([role, name]) => (<div><dt>{role}</dt><dd>{name}</dd></div>))}
+    </dl>
+    <h3 class="organization-heading">Presbiterios</h3>
+    <dl class="organization-list">
+      {regions.map(([region, name, territory]) => (
+        <div><dt>{region}</dt><dd>{name}</dd><dd class="region-territory">{territory}</dd></div>
+      ))}
+    </dl>
+  </details>
+  <details class="history-document organization-details">
+    <summary>Órganos internos y Consejo Ministerial</summary>
+    <h3>Órganos internos</h3>
+    <dl class="organization-list">
+      {internalBodies.map(([body, name]) => (<div><dt>{body}</dt><dd>{name}</dd></div>))}
+    </dl>
+    <h3>Consejo Ministerial</h3>
+    <ul class="council-members">
+      <li>Ps. Jesús Marcial Caruajulca Vallejos</li>
+      <li>Psa. Justa Modesta Moreno Alfaro</li>
+      <li>Psa. Teófila Vásquez Mejía</li>
+    </ul>
+  </details>
+  <p class="directory-note">Directorio publicado por la IEPP. El sitio consultado no indica el periodo de los cargos.</p>
+</section>
