@@ -1,0 +1,29 @@
+---
+import { sedes, fotos, directionsUrl, project, peruPath, PERU_WIDTH, PERU_HEIGHT } from '../lib/sedes';
+
+const sede = sedes.find(item => item.slug === 'sede-nacional-chiclayo')!;
+const [cover] = await fotos(sede.slug);
+const [x, y] = project(sede.lat!, sede.lng!);
+---
+<section id="sedes" class="sede-main" aria-labelledby="main-sede-title">
+  <div class="sede-main-copy">
+    <p class="sede-kicker">Nuestra sede principal</p>
+    <h2 id="main-sede-title">{sede.name}</h2>
+    <p>Aquí funciona la sede nacional de la Iglesia. Te esperamos en Chiclayo, y en {sedes.length - 1} iglesias más a lo largo del Perú.</p>
+    <dl class="sede-facts">
+      <div><dt>Dirección</dt><dd><address>{sede.address}</address>Chiclayo, Lambayeque</dd></div>
+      <div><dt>Teléfono</dt><dd><a href="tel:+5174226067">(074) 226067</a></dd></div>
+      {sede.encargados[0] && <div><dt>{sede.encargados[0].cargo}</dt><dd>{sede.encargados[0].nombre}</dd></div>}
+    </dl>
+    <div class="sede-actions">
+      <a class="button button-gold" href={`/sedes/${sede.slug}`}>Conoce la sede principal <span class="arrow" aria-hidden="true"></span></a>
+      <a class="button button-outline-light" href={directionsUrl(sede)} target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+    </div>
+    <a class="text-link sede-main-all" href="/sedes">Encuentra una iglesia cerca de ti ({sedes.length} en todo el Perú)</a>
+  </div>
+  <figure class="sede-main-visual">
+    {cover
+      ? <img src={cover.thumb} alt={`Foto de la ${sede.name}`} loading="lazy" decoding="async" />
+      : <svg viewBox={`-6 -6 ${PERU_WIDTH + 12} ${PERU_HEIGHT + 12}`} role="img" aria-label={`Mapa del Perú con la ubicación de la ${sede.name}`} class="sede-locator-svg"><path d={peruPath} /><circle class="sede-locator-halo" cx={x} cy={y} r="11" /><circle class="sede-locator-dot" cx={x} cy={y} r="5" /></svg>}
+  </figure>
+</section>

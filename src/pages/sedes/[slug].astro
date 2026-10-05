@@ -34,7 +34,7 @@ const schema = [{
 ---
 <BaseLayout path={path} title={title} description={description} schema={schema} scripts={photos.length ? ['/sede.js?v=1'] : []}
   {...(photos[0] && { image: photos[0].full, imageAlt: `Foto de la iglesia ${sede.name}`, imageWidth: String(photos[0].width), imageHeight: String(photos[0].height) })}>
-  <div class="subpage-back"><a class="text-link" href="/#sedes">← Volver a todas las iglesias</a></div>
+  <div class="subpage-back"><a class="text-link" href="/sedes">← Volver a todas las iglesias</a></div>
 
   <article class="sede" aria-labelledby="sede-title">
     <header class="sede-header">
@@ -116,7 +116,7 @@ const schema = [{
         <ul>
           {nearby.map(other => <li><a href={`/sedes/${other.slug}`}><strong>{other.name}</strong><span>{other.city}</span></a></li>)}
         </ul>
-        <a class="text-link" href="/#sedes">Ver todas las iglesias</a>
+        <a class="text-link" href="/sedes">Ver todas las iglesias</a>
       </nav>
     )}
   </article>

@@ -85,7 +85,7 @@ for (const [file, { html, url }] of pageData) {
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `Debe haber un único título principal (${file}).`);
   const currentLinks = [...html.matchAll(/<a\b[^>]*aria-current="page"[^>]*>/g)];
   // Las páginas de cada sede no tienen un enlace propio en la cabecera.
-  assert.equal(currentLinks.length, file.startsWith('sedes/') ? 0 : 1, `Debe identificarse una sola página activa en la cabecera (${file}).`);
+  assert.equal(currentLinks.length, file.startsWith('sedes/') && file !== 'sedes/index.html' ? 0 : 1, `Debe identificarse una sola página activa en la cabecera (${file}).`);
   if (currentLinks.length) assert.equal(new URL(currentLinks[0][0].match(/href="([^"]+)"/)[1], origin).href, url, `El enlace activo debe corresponder a la página actual (${file}).`);
 
   for (const key of ['description', 'robots', 'og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
@@ -126,16 +126,19 @@ assert.ok(pageData.has('historia/index.html'), 'Falta la página /historia.');
 assert.ok(pageData.has('confesion-de-fe/index.html'), 'Falta la página /confesion-de-fe.');
 assert.ok(pageData.has('organizacion/index.html'), 'Falta la página /organizacion.');
 assert.ok(pageData.has('noticias/index.html'), 'Falta la página /noticias.');
+const directorio = pageData.get('sedes/index.html')?.html ?? '';
+assert.ok(directorio, 'Falta la página /sedes.');
 const sedes = JSON.parse(await readFile(new URL('../src/data/sedes.json', import.meta.url), 'utf8'));
 for (const sede of sedes) {
   assert.ok(pageData.has(`sedes/${sede.slug}/index.html`), `Falta la página de la sede ${sede.name}.`);
-  assert.ok(home.includes(`href="/sedes/${sede.slug}"`), `La portada debe enlazar a la sede ${sede.name}.`);
+  assert.ok(directorio.includes(`href="/sedes/${sede.slug}"`), `/sedes debe enlazar a la sede ${sede.name}.`);
 }
 for (const text of ['Visión', 'Misión']) {
   assert.ok(home.includes(text), `Falta contenido institucional en la portada: ${text}.`);
 }
 const officialAddress = 'Ca. La Florida 678, Urb. San Eduardo';
-assert.ok(home.includes(`<address>${officialAddress}</address>`), 'La sede nacional del directorio debe coincidir con la dirección oficial en la portada.');
+assert.ok(home.includes(`<address>${officialAddress}</address>`), 'La sede principal de la portada debe usar la dirección oficial.');
+assert.ok(directorio.includes(`<address>${officialAddress}</address>`), 'La sede nacional del directorio debe coincidir con la dirección oficial.');
 for (const text of ['José Iván Rojas de la Cruz', 'Presbiterios', 'USJEPEP', 'USFEMIEPP', 'Consejo Ministerial', 'Diaconía']) {
   assert.ok(organizacion.includes(text), `Falta contenido institucional en /organizacion: ${text}.`);
 }

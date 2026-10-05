@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Locations from '../components/Locations.astro';
+import MainSede from '../components/MainSede.astro';
 
 const title = 'Iglesia Evangélica de los Peregrinos del Perú | IEPP';
 const description = 'Iglesia de Santidad de herencia wesleyana en el Perú. Conoce nuestra identidad y encuentra tu sede en Chiclayo, Lima y otras ciudades del Perú.';
@@ -20,7 +20,7 @@ const heroPhotos = [
   'Congregación en oración durante un culto, con cámaras registrando el momento.',
 ];
 ---
-<BaseLayout path="/" title={title} description={description} includeMap>
+<BaseLayout path="/" title={title} description={description}>
   <section id="inicio" class="hero" aria-labelledby="hero-title">
     <div class="hero-image hero-carousel" data-hero-carousel role="group" aria-roledescription="carrusel" aria-label="Fotos de la comunidad">
       <ul class="hero-carousel-track">
@@ -46,7 +46,7 @@ const heroPhotos = [
       <h1 id="hero-title">Caminamos por fe.<i>Vivimos en Él.</i></h1>
       <p>Bienvenido a la Iglesia Evangélica de los Peregrinos del Perú. Somos una Iglesia de Santidad de herencia wesleyana.</p>
       <div class="hero-actions">
-        <a class="button button-gold" href="#sedes">Encuentra tu iglesia <span class="arrow" aria-hidden="true"></span></a>
+        <a class="button button-gold" href="/sedes">Encuentra tu iglesia <span class="arrow" aria-hidden="true"></span></a>
         <a class="text-link" href="#identidad">Conócenos</a>
       </div>
     </div>
@@ -74,5 +74,5 @@ const heroPhotos = [
     </div>
   </section>
 
-  <Locations />
+  <MainSede />
 </BaseLayout>
