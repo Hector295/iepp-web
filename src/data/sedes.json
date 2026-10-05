@@ -1,0 +1,1955 @@
+[
+  {
+    "id": 1,
+    "slug": "sede-nacional-chiclayo",
+    "name": "Sede Nacional Chiclayo",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Chiclayo",
+    "address": "Ca. La Florida 678, Urb. San Eduardo",
+    "lat": -6.77008,
+    "lng": -79.85495,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Carlos Héctor Campos Cruzado",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/IEPPSANEDUARDO",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 2,
+    "slug": "san-miguel",
+    "name": "San Miguel",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "San Miguel",
+    "address": "",
+    "lat": -6.700844,
+    "lng": -79.762341,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "José Óscar Arévalo Cabrera",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 3,
+    "slug": "callanca",
+    "name": "Callanca",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Callanca, Monsefú",
+    "address": "",
+    "lat": -6.841063,
+    "lng": -79.81121,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Reynaldo Chávez Días",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 4,
+    "slug": "ciudad-eten",
+    "name": "Ciudad Eten",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Ciudad Eten",
+    "address": "Calle Manuel C. Bonilla N.º 210",
+    "lat": -6.908037,
+    "lng": -79.859655,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Norma Janett Leiva Salazar",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=100077694567941",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 5,
+    "slug": "la-victoria",
+    "name": "La Victoria",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "La Victoria, Chiclayo",
+    "address": "Calle Manco Inca 1098",
+    "lat": -6.800188,
+    "lng": -79.842438,
+    "precision": "PLUS_CODE",
+    "encargados": [
+      {
+        "nombre": "Sigilfredo Chumacero Córdova",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/iepplavictoria",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 6,
+    "slug": "el-papayo",
+    "name": "El Papayo",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "El Papayo",
+    "address": "",
+    "lat": -6.17967,
+    "lng": -79.694081,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "José David Chuque Perales",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 7,
+    "slug": "reque",
+    "name": "Reque",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Reque",
+    "address": "Calle Atahualpa N.º 704, sector La Esperanza",
+    "lat": -6.866667,
+    "lng": -79.824167,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Dorcas de la Cruz Perales",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 8,
+    "slug": "huaca-blanca",
+    "name": "Huaca Blanca",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Huaca Blanca",
+    "address": "",
+    "lat": -6.662443,
+    "lng": -79.36904,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Samuel Flores Guerrero",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 9,
+    "slug": "el-bosque",
+    "name": "El Bosque",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "El Bosque, La Victoria",
+    "address": "Calle José María Arguedas N.º 325",
+    "lat": -6.80224,
+    "lng": -79.840502,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Henrry Vega Rupay",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=100079494667763",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 10,
+    "slug": "santa-victoria",
+    "name": "Santa Victoria",
+    "region": "Norte",
+    "department": "Piura",
+    "city": "Santa Victoria, Huarmaca",
+    "address": "",
+    "lat": -5.68325,
+    "lng": -79.576332,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Gonzalo Flores Chuquipoma",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 11,
+    "slug": "algarrobo-grande",
+    "name": "Algarrobo Grande",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Algarrobo Grande, Salas",
+    "address": "",
+    "lat": -6.162672,
+    "lng": -79.486905,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Florencia Huamán Tenorio",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 12,
+    "slug": "socota",
+    "name": "Sócota",
+    "region": "Norte",
+    "department": "Cajamarca",
+    "city": "Sócota, Cutervo",
+    "address": "Socota - Cutervo",
+    "lat": -6.315357,
+    "lng": -78.69962,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Julián Huamanta Rimarachín",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 13,
+    "slug": "san-andres",
+    "name": "San Andrés",
+    "region": "Norte",
+    "department": "Cajamarca",
+    "city": "San Andrés, Cutervo",
+    "address": "",
+    "lat": -6.238498,
+    "lng": -78.712315,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Julián Huamanta Rimarachín",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 14,
+    "slug": "guadalupe",
+    "name": "Guadalupe",
+    "region": "Norte",
+    "department": "La Libertad",
+    "city": "Guadalupe, Pacasmayo",
+    "address": "Av. Industrial N.º 572",
+    "lat": -7.280085,
+    "lng": -79.485394,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Marcelino Llanos Goicochea",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/iepp.guadalupe",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 15,
+    "slug": "el-papayo-de-motupe",
+    "name": "El Papayo de Motupe",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "El Papayo, Motupe",
+    "address": "",
+    "lat": -6.17967,
+    "lng": -79.694081,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Pedro Neira Rodríguez",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 16,
+    "slug": "la-cria",
+    "name": "La Cría",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "La Cría",
+    "address": "Calle Canal Taymi s/n",
+    "lat": -6.740203,
+    "lng": -79.541461,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Luis Quispe Berrospi",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 17,
+    "slug": "lambayeque",
+    "name": "Lambayeque",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Lambayeque",
+    "address": "",
+    "lat": -6.703027,
+    "lng": -79.906509,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Manuel Reyes Manayay",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 18,
+    "slug": "san-antonio",
+    "name": "San Antonio",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Chiclayo",
+    "address": "Av. Alexander Von Humboldt 520 - Chiclayo",
+    "lat": -6.778625,
+    "lng": -79.862864,
+    "precision": "PIN",
+    "encargados": [
+      {
+        "nombre": "Demetrio Celis Hernández",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 19,
+    "slug": "pueblo-nuevo-de-ferrenafe",
+    "name": "Pueblo Nuevo de Ferreñafe",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pueblo Nuevo, Ferreñafe",
+    "address": "Juan Gil Casiano N.º 470",
+    "lat": -6.615394,
+    "lng": -79.833849,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Jesús Marcial Carhuajulca Vallejos",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=61582321820524",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 20,
+    "slug": "pacherres",
+    "name": "Pacherres",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pacherres, Pucalá",
+    "address": "Av. Túpac Amaru Mz. Ñ Lt. 1",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "David Salazar Coronel",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 21,
+    "slug": "maraihuaca",
+    "name": "Maraihuaca",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Maraihuaca",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "Trinidad Ángeles Chanamé",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 22,
+    "slug": "huasicaj",
+    "name": "Huasicaj",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Huasicaj",
+    "address": "",
+    "lat": -6.22181,
+    "lng": -79.305061,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Trinidad Ángeles Chanamé",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 23,
+    "slug": "pueblo-nuevo-de-chepen",
+    "name": "Pueblo Nuevo de Chepén",
+    "region": "Norte",
+    "department": "La Libertad",
+    "city": "Pueblo Nuevo, Chepén",
+    "address": "",
+    "lat": -7.188422,
+    "lng": -79.514938,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Isaías Tiquiahuaca Huancas",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 24,
+    "slug": "atusparias",
+    "name": "Atusparias",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Atusparias, José Leonardo Ortiz",
+    "address": "Calle Virrey Toledo N.º 890",
+    "lat": -6.757476,
+    "lng": -79.826611,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Nevin Elías Salazar Moreno",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 25,
+    "slug": "cayalti",
+    "name": "Cayaltí",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Cayaltí",
+    "address": "Calle Santa María s/n",
+    "lat": -6.887938,
+    "lng": -79.559188,
+    "precision": "PLUS_CODE",
+    "encargados": [
+      {
+        "nombre": "Franco Danny Guerrero Tantaleán",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=61552622364224",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 26,
+    "slug": "san-lorenzo",
+    "name": "San Lorenzo",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "José Leonardo Ortiz, Chiclayo",
+    "address": "Av. Venezuela N.º 3365",
+    "lat": -6.742078,
+    "lng": -79.834212,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Darío Chumacero Córdova",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/iepp.san.lorenzo.2025",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 27,
+    "slug": "mocupe",
+    "name": "Mocupe",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Mocupe, Lagunas",
+    "address": "",
+    "lat": -6.991162,
+    "lng": -79.62225,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Isaías Cubas Julca",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 28,
+    "slug": "mazanca",
+    "name": "Mazanca",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Mazanca",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "Olinda Delgado Tirado",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 29,
+    "slug": "ferrenafe",
+    "name": "Ferreñafe",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Ferreñafe",
+    "address": "Calle Sucre N.º 107",
+    "lat": -6.63889,
+    "lng": -79.78889,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "José Ángel Durand Aguilar",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 30,
+    "slug": "vista-alegre",
+    "name": "Vista Alegre",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Chiclayo",
+    "address": "Cruz de la Esperanza - Pradera 34 - Chiclayo",
+    "lat": -6.77008,
+    "lng": -79.85495,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Mario Dávila Lescano",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 31,
+    "slug": "santa-rosa",
+    "name": "Santa Rosa",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Santa Rosa (La Caleta)",
+    "address": "Augusto B. Leguía Mz. Q5 Lt. 9 y 10",
+    "lat": -6.8831,
+    "lng": -79.912924,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Zulema Llanos de Chumacero",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 32,
+    "slug": "motupe",
+    "name": "Motupe",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Motupe",
+    "address": "Av. Agricultura N.º 280, A. H. San Rafael",
+    "lat": -6.157188,
+    "lng": -79.712813,
+    "precision": "PLUS_CODE",
+    "encargados": [
+      {
+        "nombre": "Vasti Jovana Guevara Ollano",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=100070042492256",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 33,
+    "slug": "pacora",
+    "name": "Pácora",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pácora",
+    "address": "Calle La Unión N.º 347, Primero de Mayo",
+    "lat": -6.437843,
+    "lng": -79.865386,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Kevin Rodríguez Lozano",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 34,
+    "slug": "machucara",
+    "name": "Machucará",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Machucará",
+    "address": "",
+    "lat": -5.990035,
+    "lng": -79.565636,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Madonio López Leonardo",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 35,
+    "slug": "sector-aurich",
+    "name": "Sector Aurich",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Sector Aurich",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "José Natividad Zeña Díaz",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 36,
+    "slug": "santa-valentina",
+    "name": "Santa Valentina",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Sector Santa Valentina",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "Delia Rosa Nevado Purizaca",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 37,
+    "slug": "pucara",
+    "name": "Pucará",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pucará, Batangrande",
+    "address": "",
+    "lat": -6.483264,
+    "lng": -79.651911,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Héctor Julca Sánchez",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 38,
+    "slug": "catacaos",
+    "name": "Catacaos",
+    "region": "Norte",
+    "department": "Piura",
+    "city": "Catacaos",
+    "address": "",
+    "lat": -5.473276,
+    "lng": -80.358154,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Rodolfo Pérez Silva",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 39,
+    "slug": "ignacio-escudero",
+    "name": "Ignacio Escudero",
+    "region": "Norte",
+    "department": "Piura",
+    "city": "Ignacio Escudero, Sullana",
+    "address": "Calle Juan Velasco s/n, sector Los Jardines",
+    "lat": -4.832642,
+    "lng": -80.887859,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Gilberto García Bautista",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 40,
+    "slug": "cayancas",
+    "name": "Cayancas",
+    "region": "Norte",
+    "department": "Piura",
+    "city": "Cayancas, Huarmaca",
+    "address": "",
+    "lat": -5.68325,
+    "lng": -79.576332,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Segundo Rubén Tineo Huanca",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 41,
+    "slug": "inkahuasi",
+    "name": "Inkahuasi",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Inkahuasi",
+    "address": "Sector San Juan",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Carlos Evaristo Calderón",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 42,
+    "slug": "la-playa",
+    "name": "La Playa",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "La Playa, Inkahuasi",
+    "address": "",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Hernesto Purihuamán Manayay",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 43,
+    "slug": "totoras-de-pampa-verde",
+    "name": "Totoras de Pampa Verde",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Totoras, Pampa Verde",
+    "address": "",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Demetrio Manayay Huamán",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 44,
+    "slug": "yoyoka-alto",
+    "name": "Yoyoka Alto",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Yoyoka Alto",
+    "address": "",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Alejandro Bernilla Calderón",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 45,
+    "slug": "totoras-de-inkahuasi",
+    "name": "Totoras de Inkahuasi",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Totoras, Inkahuasi",
+    "address": "",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Santos Torres Sánchez",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 46,
+    "slug": "chinama",
+    "name": "Chiñama",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Chiñama, Cañaris",
+    "address": "",
+    "lat": -6.023334,
+    "lng": -79.405746,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Víctor Sánchez Manayay",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 47,
+    "slug": "cutervo-centro",
+    "name": "Cutervo Centro",
+    "region": "Norte",
+    "department": "Cajamarca",
+    "city": "Cutervo",
+    "address": "G5W6+2M9",
+    "lat": -6.454938,
+    "lng": -78.838313,
+    "precision": "PLUS_CODE",
+    "encargados": [
+      {
+        "nombre": "Isaías Tongo Rafael",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 48,
+    "slug": "cerro-colorado",
+    "name": "Cerro Colorado",
+    "region": "Norte",
+    "department": "La Libertad",
+    "city": "Cerro Colorado, Pacanga",
+    "address": "AA. HH. Cerro Colorado Mz. M Lt. 11",
+    "lat": -7.081024,
+    "lng": -79.458996,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "José Isaac Olivera Cabrera",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "https://www.facebook.com/profile.php?id=61594244540167",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 49,
+    "slug": "salas",
+    "name": "Salas",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Salas",
+    "address": "",
+    "lat": -6.162672,
+    "lng": -79.486905,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Luciano Paico Carrillo",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 50,
+    "slug": "gramalote",
+    "name": "Gramalote",
+    "region": "Norte",
+    "department": "Cajamarca",
+    "city": "Gramalote, Sócota",
+    "address": "",
+    "lat": -6.287508,
+    "lng": -78.717837,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "David Ayala Maluquis",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 51,
+    "slug": "pueblo-nuevo-de-santa-clara",
+    "name": "Pueblo Nuevo de Santa Clara",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pueblo Nuevo, Santa Clara",
+    "address": "",
+    "lat": -6.457138,
+    "lng": -79.710429,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Ever Quispe Santa Cruz",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 52,
+    "slug": "san-martin",
+    "name": "San Martín",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "San Martín",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "precision": "SIN_UBICACION",
+    "encargados": [
+      {
+        "nombre": "Samuel Pérez Bautista",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 53,
+    "slug": "cruz-loma",
+    "name": "Cruz Loma",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Cruz Loma, Cañaris",
+    "address": "",
+    "lat": -6.023334,
+    "lng": -79.405746,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Lorenzo Torres Purihuamán",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 54,
+    "slug": "pampa-grande",
+    "name": "Pampa Grande",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pampa Grande, Cañaris",
+    "address": "",
+    "lat": -6.023334,
+    "lng": -79.405746,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Aniceto Rodríguez Barrios",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 55,
+    "slug": "llamica",
+    "name": "Llámica",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Llámica, Inkahuasi",
+    "address": "",
+    "lat": -6.231377,
+    "lng": -79.371959,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Lizardo Vilcabamba",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 56,
+    "slug": "pucala",
+    "name": "Pucalá",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Pucalá",
+    "address": "",
+    "lat": -6.781385,
+    "lng": -79.610712,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "María Gonzales de Barrueto",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 57,
+    "slug": "casa-blanca",
+    "name": "Casa Blanca",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Casa Blanca, José Leonardo Ortiz",
+    "address": "",
+    "lat": -6.742078,
+    "lng": -79.834212,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Felipe Gómez Cruzado",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 58,
+    "slug": "san-jose-obrero",
+    "name": "San José Obrero",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "San José Obrero, José Leonardo Ortiz",
+    "address": "Calle Manuel Prado N.º 580",
+    "lat": -6.742078,
+    "lng": -79.834212,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Noé Oblitas Siesquén",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 59,
+    "slug": "chacupe-alto",
+    "name": "Chacupe Alto",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Chacupe Alto",
+    "address": "",
+    "lat": -6.807825,
+    "lng": -79.873919,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Ernesto Campos Ramírez",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 60,
+    "slug": "saucembuyco",
+    "name": "Saucembuyco",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Saucembuyco, Cañaris",
+    "address": "",
+    "lat": -6.023334,
+    "lng": -79.405746,
+    "precision": "APROX_DISTRITO",
+    "encargados": [
+      {
+        "nombre": "Reyes Chuca Cosio",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 61,
+    "slug": "collud",
+    "name": "Collud",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "Collud, Pomalca",
+    "address": "",
+    "lat": -6.78631,
+    "lng": -79.773459,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Jesús David Tullume Acosta",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 62,
+    "slug": "querocoto",
+    "name": "Querocoto",
+    "region": "Norte",
+    "department": "Cajamarca",
+    "city": "Querocoto, Chota",
+    "address": "",
+    "lat": -6.359193,
+    "lng": -79.034612,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "José Kelvin Yrigoín Vásquez",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 63,
+    "slug": "casa-de-gloria",
+    "name": "Casa de Gloria",
+    "region": "Norte",
+    "department": "Lambayeque",
+    "city": "La Victoria, Chiclayo",
+    "address": "",
+    "lat": -6.819229,
+    "lng": -79.859118,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [
+      {
+        "nombre": "Juan Elías Chumacero Llanos",
+        "cargo": "Pastor o pastora a cargo"
+      }
+    ],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Directorio de iglesias de la Región Norte 2026 (IEPP)"
+  },
+  {
+    "id": 64,
+    "slug": "el-porvenir",
+    "name": "El Porvenir",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "El Porvenir, Trujillo",
+    "address": "Hermanos Angulo 740",
+    "lat": -8.08333,
+    "lng": -79.0,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 65,
+    "slug": "la-esperanza",
+    "name": "La Esperanza",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "La Esperanza, Trujillo",
+    "address": "Santa Rosa 269",
+    "lat": -8.064901,
+    "lng": -79.081529,
+    "precision": "PIN",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 66,
+    "slug": "huamachuco-jr-lara",
+    "name": "Huamachuco Jr Lara",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "Huamachuco",
+    "address": "Jr. Lara 386",
+    "lat": -7.812083,
+    "lng": -78.048694,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 67,
+    "slug": "huamachuco-gonzales-prada",
+    "name": "Huamachuco Gonzales Prada",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "Huamachuco",
+    "address": "Manuel Gonzales Prada",
+    "lat": -7.812083,
+    "lng": -78.048694,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 68,
+    "slug": "piedras-vivas-trujillo",
+    "name": "Piedras Vivas Trujillo",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "Trujillo",
+    "address": "Manuel Encinas 133",
+    "lat": -8.0976,
+    "lng": -79.02069,
+    "precision": "DIRECCION",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 69,
+    "slug": "chicama",
+    "name": "Chicama",
+    "region": "Sur",
+    "department": "La Libertad",
+    "city": "Chicama",
+    "address": "4VP7+8F9 - Calle San Martin",
+    "lat": -7.864188,
+    "lng": -79.136313,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 70,
+    "slug": "el-agustino-lima",
+    "name": "El Agustino Lima",
+    "region": "Sur",
+    "department": "Lima",
+    "city": "El Agustino, Lima",
+    "address": "Av. 1 de Mayo 3321",
+    "lat": -12.03154,
+    "lng": -77.0031,
+    "precision": "OSM",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 71,
+    "slug": "san-antonio-de-chaclla",
+    "name": "San Antonio de Chaclla",
+    "region": "Sur",
+    "department": "Lima",
+    "city": "San Antonio de Chaclla",
+    "address": "32CJ+XW5 - Lloque Yupanqui",
+    "lat": -11.927563,
+    "lng": -76.967688,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 72,
+    "slug": "jaen-sanchez-carrion",
+    "name": "Jaén Sanchez Carrion",
+    "region": "Nor Oriente",
+    "department": "Cajamarca",
+    "city": "Jaén",
+    "address": "Sanchez Carrion 637",
+    "lat": -5.70729,
+    "lng": -78.80785,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 73,
+    "slug": "jaen-2",
+    "name": "Jaén 2",
+    "region": "Nor Oriente",
+    "department": "Cajamarca",
+    "city": "Jaén",
+    "address": "76R2+6H6",
+    "lat": -5.709438,
+    "lng": -78.798563,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 74,
+    "slug": "maranatha-jaen",
+    "name": "Maranatha Jaén",
+    "region": "Nor Oriente",
+    "department": "Cajamarca",
+    "city": "Jaén",
+    "address": "75RX+JWM - Fernando Belaunde Terry",
+    "lat": -5.713828,
+    "lng": -78.799328,
+    "precision": "PIN",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 75,
+    "slug": "bagua",
+    "name": "Bagua",
+    "region": "Nor Oriente",
+    "department": "Amazonas",
+    "city": "Bagua",
+    "address": "Av. Circunvalacion Mz.53 Lt.5",
+    "lat": -5.63909,
+    "lng": -78.53173,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 76,
+    "slug": "cumba",
+    "name": "Cumba",
+    "region": "Nor Oriente",
+    "department": "Amazonas",
+    "city": "Cumba",
+    "address": "Av. Progreso 709-738",
+    "lat": -5.93566,
+    "lng": -78.66407,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 77,
+    "slug": "moyobamba",
+    "name": "Moyobamba",
+    "region": "Oriente",
+    "department": "San Martin",
+    "city": "Moyobamba",
+    "address": "Av. Grau 773",
+    "lat": -6.03441,
+    "lng": -76.97423,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 78,
+    "slug": "rioja",
+    "name": "Rioja",
+    "region": "Oriente",
+    "department": "San Martin",
+    "city": "Rioja",
+    "address": "Jr. Amazonas 146",
+    "lat": -6.05675,
+    "lng": -77.16651,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 79,
+    "slug": "soritor-1",
+    "name": "Soritor 1",
+    "region": "Oriente",
+    "department": "San Martin",
+    "city": "Soritor",
+    "address": "VV4V+GGM",
+    "lat": -6.143688,
+    "lng": -77.106188,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 80,
+    "slug": "soritor-2",
+    "name": "Soritor 2",
+    "region": "Oriente",
+    "department": "San Martin",
+    "city": "Soritor",
+    "address": "QWRQ+MG5",
+    "lat": -6.208313,
+    "lng": -77.061188,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 81,
+    "slug": "bambamarca",
+    "name": "Bambamarca",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Bambamarca",
+    "address": "8F36+W7Q",
+    "lat": -6.695188,
+    "lng": -78.539313,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 82,
+    "slug": "el-lirio",
+    "name": "El Lirio",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Bambamarca",
+    "address": "9CRM+3XH",
+    "lat": -6.609813,
+    "lng": -78.565063,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 83,
+    "slug": "san-jose-del-obelisco",
+    "name": "San José del Obelisco",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Bambamarca",
+    "address": "Jr. San Martin de Porres 1219",
+    "lat": -6.679588,
+    "lng": -78.51921,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 84,
+    "slug": "agomarca-bajo",
+    "name": "Agomarca Bajo",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Agomarca Bajo, Bambamarca",
+    "address": "Agomarca Bajo",
+    "lat": -6.69251,
+    "lng": -78.5331,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 85,
+    "slug": "jorge-chavez",
+    "name": "Jorge Chávez",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Jorge Chávez, Bambamarca",
+    "address": "8FCH+5XM",
+    "lat": -6.679563,
+    "lng": -78.520063,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 86,
+    "slug": "maygasbamba-alto",
+    "name": "Maygasbamba Alto",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Maygasbamba Alto, Bambamarca",
+    "address": "8FP9+R5",
+    "lat": -6.662938,
+    "lng": -78.532063,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 87,
+    "slug": "bambamarca-2",
+    "name": "Bambamarca 2",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Bambamarca",
+    "address": "9F42+98P",
+    "lat": -6.644063,
+    "lng": -78.549188,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 88,
+    "slug": "cajamarca-ciudad",
+    "name": "Cajamarca Ciudad",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Cajamarca",
+    "address": "Jr. Los Gladiolos 227",
+    "lat": -7.163977,
+    "lng": -78.512698,
+    "precision": "PIN",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 89,
+    "slug": "cashapampa-alto",
+    "name": "Cashapampa Alto",
+    "region": "Nor Andina",
+    "department": "Cajamarca",
+    "city": "Cashapampa Alto",
+    "address": "Cashapampa Alto",
+    "lat": -6.743398,
+    "lng": -78.522611,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 90,
+    "slug": "pucallpa-salvador-allende",
+    "name": "Pucallpa Salvador Allende",
+    "region": "Ucayali",
+    "department": "Ucayali",
+    "city": "Pucallpa",
+    "address": "Av. Salvador Allende 190",
+    "lat": -8.37915,
+    "lng": -74.55387,
+    "precision": "APROX_LOCALIDAD",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  },
+  {
+    "id": 91,
+    "slug": "pucallpa-15-de-febrero",
+    "name": "Pucallpa 15 de Febrero",
+    "region": "Ucayali",
+    "department": "Ucayali",
+    "city": "Pucallpa",
+    "address": "HCQR+9QF",
+    "lat": -8.411563,
+    "lng": -74.558063,
+    "precision": "PLUS_CODE",
+    "encargados": [],
+    "resumen": "",
+    "horarios": [],
+    "telefono": "",
+    "facebook": "",
+    "source": "Coordenadas y categoría proporcionadas por el usuario"
+  }
+]

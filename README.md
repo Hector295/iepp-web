@@ -30,6 +30,10 @@ npm run preview
 
 Para desarrollar con recarga automática, usa `npm run dev`. La salida de producción se genera en `out/`.
 
+## Sedes
+
+Cada sede tiene su página en `/sedes/<slug>`, generada desde `src/data/sedes.json` (dirección, coordenadas, encargados, resumen, horarios, teléfono y Facebook). Las fotos, hasta 20 por sede, se copian en `src/assets/sedes/<slug>/` y se optimizan al construir; ver [src/assets/sedes/LEEME.md](src/assets/sedes/LEEME.md). El sitemap se genera automáticamente.
+
 ## Documentación
 
 - [Plan pendiente de migración a iepp.pe](MIGRACION-IEPP-PE.md): solo documentación; no modifica el alojamiento actual ni los DNS.

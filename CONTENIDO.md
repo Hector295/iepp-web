@@ -13,12 +13,12 @@ Revisión de las páginas públicas de `iepp.pe` realizada el 21 de septiembre d
 
 ## Criterios y asuntos pendientes
 
-- Los nombres y cargos se trasladan tal como los publica la organización. La fuente no indica periodos de gestión: el sitio nuevo lo aclara y no los identifica como una directiva de 2026. Conviene confirmar su vigencia con la IEPP antes de publicar.
+- La organización (Concilio, presbíteros, órganos internos, departamentos y Consejo Ministerial) se actualizó con el documento «Organización de la IEPP» entregado en octubre de 2026.
 - La dirección del pie oficial es **Ca. La Florida 678, Urb. San Eduardo, Chiclayo**. Sustituye el ambiguo `608/678` del proyecto y el error tipográfico «Floria» de la página antigua de contacto.
 - La web consultada no contiene las noticias que aparecían como muestras en este proyecto. Se retiraron esos artículos y se conserva el acceso a Facebook, enlazado por la propia IEPP.
 - La web antigua enlaza `http://sbp.iepp.pe`. El subdominio no resolvió durante la consulta; no se añade un acceso roto ni se inventa contenido del SBP.
-- El directorio de 42 sedes ya estaba en el proyecto. Las páginas consultadas no publican ese listado completo: esta revisión confirma la dirección de la sede nacional y la estructura regional, no revalida las otras 41 direcciones o sus coordenadas.
-- Hay una diferencia por confirmar: la página institucional asigna Cutervo al presbiterio Norte, mientras el directorio existente coloca Cutervo y Sócota en Nor Andina. Se conserva el dato de cada fuente hasta que la IEPP confirme la adscripción de esas sedes.
+- El directorio de sedes vive en `src/data/sedes.json` (91 sedes). La Región Norte (63 iglesias) proviene del documento «Dirección de iglesias – Norte 2026»; las demás regiones conservan el directorio anterior. No se publican los celulares de los pastores. Las iglesias nuevas se ubicaron con OpenStreetMap a nivel de localidad o distrito (`APROX_LOCALIDAD`, `APROX_DISTRITO`); seis no se encontraron y figuran sin punto en el mapa (`SIN_UBICACION`).
+- Cutervo y Sócota pasan a la Región Norte, como indican la página institucional y el directorio Norte 2026. Puerto Eten y las dos sedes antiguas de Ferreñafe sin dirección no figuran en el directorio 2026 y se retiraron; Ferreñafe queda con Calle Sucre 107 y Pueblo Nuevo de Ferreñafe con Juan Gil Casiano 470.
 - Se mantiene la indicación de imágenes ilustrativas y de coordenadas aproximadas. No se atribuyen las imágenes generadas a actividades históricas reales.
 - Al publicar en GitHub Pages, se conservan las seis URLs antiguas mediante archivos HTML con redirección inmediata, enlace alternativo y canonical al destino actual. GitHub Pages no interpreta `.htaccess`; estas redirecciones se realizan en el navegador, no mediante respuestas HTTP 301.
 

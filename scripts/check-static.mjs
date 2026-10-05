@@ -20,9 +20,12 @@ async function findPages(dir = '') {
 const pageFiles = (await findPages()).sort();
 assert.ok(pageFiles.length > 0, 'No se encontró ninguna página publicada en out/.');
 
-const fileToUrl = file => {
+// Si existe /ruta.html (redirección antigua), GitHub Pages lo sirve para /ruta; la página real vive en /ruta/.
+const exists = path => stat(new URL(path, source)).then(() => true, () => false);
+const fileToUrl = async file => {
   const dir = file.slice(0, -'index.html'.length).replace(/\/$/, '');
-  return dir ? new URL(dir, origin).href : origin;
+  if (!dir) return origin;
+  return new URL(await exists(`${dir}.html`) ? `${dir}/` : dir, origin).href;
 };
 
 const pageData = new Map();
@@ -30,7 +33,7 @@ for (const file of pageFiles) {
   const html = await readFile(new URL(file, source), 'utf8');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(ids.length, new Set(ids).size, `IDs HTML duplicados en ${file}.`);
-  pageData.set(file, { html, ids: new Set(ids), url: fileToUrl(file) });
+  pageData.set(file, { html, ids: new Set(ids), url: await fileToUrl(file) });
 }
 
 assert.equal((await readFile(new URL('CNAME', source), 'utf8')).trim(), 'iepp.velifatech.com', 'El dominio de publicación debe ser iepp.velifatech.com.');
@@ -42,7 +45,7 @@ const legacyRoutes = {
   'nosotros.html': '/#identidad',
   'nosotros/nuestra_historia.html': '/historia',
   'nosotros/confesiondefe.html': '/confesion-de-fe',
-  'organizacion.html': '/organizacion',
+  'organizacion.html': '/organizacion/',
   'contacto.html': '/#contacto',
 };
 for (const [file, destination] of Object.entries(legacyRoutes)) {
@@ -54,6 +57,8 @@ for (const [file, destination] of Object.entries(legacyRoutes)) {
   assert.equal(target.origin, new URL(origin).origin, 'Redirección fuera del dominio oficial.');
   const targetPath = decodeURIComponent(target.pathname).replace(/^\/+/, '').replace(/\/+$/, '');
   const targetFile = targetPath ? `${targetPath}/index.html` : 'index.html';
+  // GitHub Pages sirve /ruta.html antes que /ruta/index.html: sin barra final, la redirección se llamaría a sí misma.
+  assert.ok(target.pathname.endsWith('/') || `${targetPath}.html` !== file, `Redirección en bucle (${file}): usa ${target.pathname}/`);
   assert.ok(pageData.has(targetFile), `Redirección a una página inexistente: ${target.href}`);
   if (target.hash) assert.ok(pageData.get(targetFile).ids.has(decodeURIComponent(target.hash.slice(1))), `Sección de destino inexistente: ${target.hash}`);
 }
@@ -79,8 +84,9 @@ for (const [file, { html, url }] of pageData) {
   assert.ok(html.includes(`<link rel="canonical" href="${url}">`), `Canonical incorrecta (${file}).`);
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `Debe haber un único título principal (${file}).`);
   const currentLinks = [...html.matchAll(/<a\b[^>]*aria-current="page"[^>]*>/g)];
-  assert.equal(currentLinks.length, 1, `Debe identificarse una sola página activa en la cabecera (${file}).`);
-  assert.equal(new URL(currentLinks[0][0].match(/href="([^"]+)"/)[1], origin).href, url, `El enlace activo debe corresponder a la página actual (${file}).`);
+  // Las páginas de cada sede no tienen un enlace propio en la cabecera.
+  assert.equal(currentLinks.length, file.startsWith('sedes/') ? 0 : 1, `Debe identificarse una sola página activa en la cabecera (${file}).`);
+  if (currentLinks.length) assert.equal(new URL(currentLinks[0][0].match(/href="([^"]+)"/)[1], origin).href, url, `El enlace activo debe corresponder a la página actual (${file}).`);
 
   for (const key of ['description', 'robots', 'og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
     const content = html.match(new RegExp(`<meta (?:name|property)="${key}" content="([^"]+)"`))?.[1];
@@ -120,12 +126,17 @@ assert.ok(pageData.has('historia/index.html'), 'Falta la página /historia.');
 assert.ok(pageData.has('confesion-de-fe/index.html'), 'Falta la página /confesion-de-fe.');
 assert.ok(pageData.has('organizacion/index.html'), 'Falta la página /organizacion.');
 assert.ok(pageData.has('noticias/index.html'), 'Falta la página /noticias.');
+const sedes = JSON.parse(await readFile(new URL('../src/data/sedes.json', import.meta.url), 'utf8'));
+for (const sede of sedes) {
+  assert.ok(pageData.has(`sedes/${sede.slug}/index.html`), `Falta la página de la sede ${sede.name}.`);
+  assert.ok(home.includes(`href="/sedes/${sede.slug}"`), `La portada debe enlazar a la sede ${sede.name}.`);
+}
 for (const text of ['Visión', 'Misión']) {
   assert.ok(home.includes(text), `Falta contenido institucional en la portada: ${text}.`);
 }
 const officialAddress = 'Ca. La Florida 678, Urb. San Eduardo';
 assert.ok(home.includes(`<address>${officialAddress}</address>`), 'La sede nacional del directorio debe coincidir con la dirección oficial en la portada.');
-for (const text of ['José Iván Rojas de la Cruz', 'Presbiterios', 'USJEPEP', 'USFEMIEP', 'Consejo Ministerial', 'Diaconía']) {
+for (const text of ['José Iván Rojas de la Cruz', 'Presbiterios', 'USJEPEP', 'USFEMIEPP', 'Consejo Ministerial', 'Diaconía']) {
   assert.ok(organizacion.includes(text), `Falta contenido institucional en /organizacion: ${text}.`);
 }
 assert.equal((confesion.match(/class="faith-article"/g) || []).length, 18, 'Conservar los 18 artículos de fe en /confesion-de-fe.');

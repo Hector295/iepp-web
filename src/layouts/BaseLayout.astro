@@ -11,6 +11,8 @@ interface Props {
   imageWidth?: string;
   imageHeight?: string;
   includeMap?: boolean;
+  scripts?: string[];
+  schema?: Record<string, unknown>[];
 }
 
 const {
@@ -22,6 +24,8 @@ const {
   imageWidth = '1920',
   imageHeight = '1080',
   includeMap = false,
+  scripts = [],
+  schema = [],
 } = Astro.props;
 
 const name = 'Iglesia Evangélica de los Peregrinos del Perú';
@@ -71,6 +75,7 @@ const structuredData = {
       isPartOf: { '@id': websiteId },
       about: { '@id': organizationId },
     },
+    ...schema,
   ],
 };
 ---
@@ -106,7 +111,7 @@ const structuredData = {
     {includeMap && <link rel="stylesheet" href="/assets/vendor/leaflet.css" />}
     {includeMap && <link rel="stylesheet" href="/assets/vendor/MarkerCluster.css" />}
     <link rel="preload" href="/assets/fonts/oswald-brand.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="stylesheet" href="/styles.css?v=lectura-fe" />
+    <link rel="stylesheet" href="/styles.css?v=sedes-2026" />
     <link rel="icon" type="image/png" href="/assets/logo-peregrinos-original.png" />
   </head>
   <body>
@@ -122,7 +127,8 @@ const structuredData = {
 
     {includeMap && <script is:inline src="/assets/vendor/leaflet.js" defer></script>}
     {includeMap && <script is:inline src="/assets/vendor/leaflet.markercluster.js" defer></script>}
-    {includeMap && <script is:inline src="/locations.js?v=direccion-oficial" defer></script>}
+    {includeMap && <script is:inline src="/locations.js?v=sedes-2026" defer></script>}
+    {scripts.map(src => <script is:inline src={src} defer></script>)}
     <script is:inline src="/site.js?v=video-sin-control" defer></script>
   </body>
 </html>

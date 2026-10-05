@@ -5,7 +5,7 @@ export const getStaticPaths: GetStaticPaths = () => Object.entries({
   nosotros: '/#identidad',
   'nosotros/nuestra_historia': '/historia',
   'nosotros/confesiondefe': '/confesion-de-fe',
-  organizacion: '/organizacion',
+  organizacion: '/organizacion/',
   contacto: '/#contacto',
 }).map(([legacy, destination]) => ({ params: { legacy }, props: { destination } }));
 

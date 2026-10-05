@@ -23,3 +23,7 @@ test-results/
 
 # Fotos originales sin procesar (las versiones optimizadas viven en public/assets/comunidad/)
 /fotos/
+
+# Documentos de trabajo (Word) y bloqueos de LibreOffice
+*.docx
+.~lock.*#
