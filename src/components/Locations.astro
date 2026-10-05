@@ -47,7 +47,7 @@ const count = (region: string) => sedes.filter(sede => sede.region === region).l
         {cards.map(({ sede, cover }) => (
           <li class="location-entry" data-number={sede.id} data-slug={sede.slug} data-region={sede.region} data-lat={hasPin(sede) ? sede.lat!.toFixed(6) : undefined} data-lng={hasPin(sede) ? sede.lng!.toFixed(6) : undefined} data-approx={isApprox(sede) ? '' : undefined} data-search={[sede.name, sede.city, sede.department, sede.address, sede.region, ...sede.encargados.map(e => e.nombre)].join(' ')}>
             <a class="location-photo" href={`/sedes/${sede.slug}`} tabindex="-1" aria-hidden="true">
-              {cover ? <img src={cover.thumb} alt="" loading="lazy" decoding="async" /> : <span class="location-photo-empty"><img src="/assets/logo-peregrinos-original.png" alt="" loading="lazy" /></span>}
+              {cover ? <img src={cover.thumb} alt="" loading="lazy" decoding="async" /> : <span class="location-photo-empty"><img src="/assets/logo-peregrinos.png" alt="" loading="lazy" /></span>}
             </a>
             <div class="location-body">
               <h3><a href={`/sedes/${sede.slug}`}>{sede.name}</a></h3>

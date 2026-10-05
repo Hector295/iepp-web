@@ -29,7 +29,7 @@ figcaption { font-size: .75rem; line-height: 1.5; padding-top: .65rem; }
 
 /* Keep the church identity and useful destinations within reach. */
 .site-header { position: fixed; z-index: 30; inset: 0 0 auto; height: var(--header-height); padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; background: rgba(3,28,45,.78); border-bottom: 1px solid var(--line); }
-.brand { display: inline-flex; align-items: center; gap: 0; min-width: 0; }
+.brand { display: inline-flex; align-items: center; gap: clamp(.5rem, 1vw, .9rem); min-width: 0; }
 .brand-mark { width: 104px; height: 70px; object-fit: contain; flex: 0 0 auto; }
 .brand-name { display: grid; gap: .2rem; color: var(--ivory); font: 400 1.22rem/1.25 "Oswald Brand", "Arial Narrow", sans-serif; text-transform: uppercase; }
 .brand-name > span { display: block; white-space: nowrap; }
