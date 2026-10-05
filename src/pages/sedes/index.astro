@@ -1,12 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Locations from '../../components/Locations.astro';
+import PageHeader from '../../components/PageHeader.astro';
 import { sedes } from '../../lib/sedes';
 
 const title = 'Sedes | Iglesia Evangélica de los Peregrinos del Perú';
 const description = `Encuentra una de las ${sedes.length} iglesias de la Iglesia Evangélica de los Peregrinos del Perú: busca por ciudad, región o cercanía y mira cómo llegar.`;
 ---
 <BaseLayout path="/sedes" title={title} description={description} includeMap>
-  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <PageHeader>
+    <h1 id="locations-title">Encuentra una iglesia<br /><i>cerca de ti.</i></h1>
+    <div class="page-intro"><p>Tenemos {sedes.length} iglesias en el Perú. Escribe el nombre de tu ciudad o deja que te mostremos las más cercanas.</p></div>
+  </PageHeader>
   <Locations />
 </BaseLayout>

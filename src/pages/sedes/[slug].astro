@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
 import { sedes, fotos, hasPin, precisionNote, directionsUrl, project, peruPath, PERU_WIDTH, PERU_HEIGHT, type Sede } from '../../lib/sedes';
 
 export function getStaticPaths() {
@@ -34,23 +35,20 @@ const schema = [{
 ---
 <BaseLayout path={path} title={title} description={description} schema={schema} scripts={photos.length ? ['/sede.js?v=1'] : []}
   {...(photos[0] && { image: photos[0].full, imageAlt: `Foto de la iglesia ${sede.name}`, imageWidth: String(photos[0].width), imageHeight: String(photos[0].height) })}>
-  <div class="subpage-back"><a class="text-link" href="/sedes">← Volver a todas las iglesias</a></div>
+  <PageHeader back={{ href: '/sedes', label: 'Volver a todas las iglesias' }} kicker={`Región ${sede.region} · ${place}`}>
+    <h1 id="sede-title">{sede.name}</h1>
+    <p class="sede-summary">{resumen}</p>
+    <div slot="actions" class="sede-actions">
+      <a class="button button-gold" href={directionsUrl(sede)} target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg>
+        Cómo llegar
+      </a>
+      {phone && <a class="button button-outline-light" href={`tel:${phone}`}>Llamar: {sede.telefono}</a>}
+      {sede.facebook && <a class="button button-outline-light" href={sede.facebook} target="_blank" rel="noopener noreferrer">Ver su Facebook</a>}
+    </div>
+  </PageHeader>
 
-  <article class="sede" aria-labelledby="sede-title">
-    <header class="sede-header">
-      <p class="sede-kicker">Región {sede.region} · {place}</p>
-      <h1 id="sede-title">{sede.name}</h1>
-      <p class="sede-summary">{resumen}</p>
-      <div class="sede-actions">
-        <a class="button button-gold" href={directionsUrl(sede)} target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg>
-          Cómo llegar
-        </a>
-        {phone && <a class="button button-outline-light" href={`tel:${phone}`}>Llamar: {sede.telefono}</a>}
-        {sede.facebook && <a class="button button-outline-light" href={sede.facebook} target="_blank" rel="noopener noreferrer">Ver su Facebook</a>}
-      </div>
-    </header>
-
+  <article class="sede surface-light" aria-labelledby="sede-title">
     <section class="sede-gallery" aria-labelledby="gallery-title">
       <h2 id="gallery-title" class="sr-only">Fotos de la iglesia</h2>
       {photos.length ? (

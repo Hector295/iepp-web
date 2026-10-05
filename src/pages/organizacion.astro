@@ -1,15 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Organization from '../components/Organization.astro';
+import PageHeader from '../components/PageHeader.astro';
 
 const title = 'Organización | Iglesia Evangélica de los Peregrinos del Perú';
 const description = 'Concilio, seis presbiterios, departamentos, órganos internos y Consejo Ministerial de la Iglesia Evangélica de los Peregrinos del Perú.';
 ---
 <BaseLayout path="/organizacion/" title={title} description={description}>
-  <div class="subpage-back"><a class="text-link" href="/">← Volver al inicio</a></div>
+  <PageHeader>
+    <h1 id="organization-title">Una Iglesia.<br /><i>Seis regiones.</i></h1>
+    <div class="page-intro"><p>El Concilio gobierna y administra la IEPP. Reúne al Obispo, al Obispo auxiliar, al Secretario general, al Tesorero general y a seis presbíteros.</p></div>
+  </PageHeader>
   <Organization />
 
-  <section id="ministerios" class="ministries" aria-labelledby="ministries-title">
+  <section id="ministerios" class="ministries surface-light-alt" aria-labelledby="ministries-title">
     <div class="ministry-content">
       <h2 id="ministries-title">Departamentos<br /><i>al servicio.</i></h2>
       <p>Cuatro áreas acompañan la labor de la Iglesia.</p>

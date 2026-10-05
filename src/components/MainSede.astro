@@ -5,7 +5,7 @@ const sede = sedes.find(item => item.slug === 'sede-nacional-chiclayo')!;
 const [cover] = await fotos(sede.slug);
 const [x, y] = project(sede.lat!, sede.lng!);
 ---
-<section id="sedes" class="sede-main" aria-labelledby="main-sede-title">
+<section id="sedes" class="sede-main surface-dark" aria-labelledby="main-sede-title">
   <div class="sede-main-copy">
     <p class="sede-kicker">Nuestra sede principal</p>
     <h2 id="main-sede-title">{sede.name}</h2>

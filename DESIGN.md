@@ -11,7 +11,6 @@ colors:
   luminous-gold: "#f2cf88"
   fine-light-line: "rgba(244, 239, 227, 0.38)"
   ministry-ochre: "#b87b35"
-  deep-location-navy: "#071f2c"
 typography:
   display:
     fontFamily: "Cormorant Garamond, Georgia, serif"
@@ -115,7 +114,6 @@ La paleta combina noche profunda, papeles cálidos y oro mate; el ocre aparece c
 
 - **Azul noche** (`{colors.midnight-navy}`): fondo dominante, texto sobre oro y base del hero.
 - **Azul de capas** (`{colors.layered-navy}`): matiz secundario para citas y transiciones oscuras.
-- **Azul de destino** (`{colors.deep-location-navy}`): superficie de sedes, apenas separada del fondo principal.
 - **Tinta editorial** (`{colors.editorial-ink}`): texto y controles sobre marfil y ocre.
 - **Marfil cálido** (`{colors.warm-ivory}`): texto sobre fondos oscuros y superficie luminosa de historia.
 - **Papel de herencia** (`{colors.heritage-paper}`): superficie de identidad, memoria y doctrina.
@@ -124,6 +122,8 @@ La paleta combina noche profunda, papeles cálidos y oro mate; el ocre aparece c
 **The Golden Wayfinding Rule.** El oro indica camino, doctrina o acción; no llena contenedores decorativos sin función.
 
 **The Layered Night Rule.** Los azules oscuros deben conservar diferencias sutiles entre etapas sin romper la continuidad nocturna.
+
+**The Page Rule (estándar de superficies).** Toda página interior abre con una cabecera azul (`PageHeader`: volver, título e introducción) y presenta su contenido en marfil, o en papel cuando dos tramos claros quedan juntos. El azul se reserva para cabeceras, el hero, la película de Historia, los llamados a la acción (como la sede principal de la portada), los mapas y el pie. Cada sección declara su superficie con `surface-dark`, `surface-light` o `surface-light-alt`, y los componentes usan las variables `--fg`, `--muted`, `--accent`, `--rule`, `--rule-strong` y `--panel` en lugar de colores fijos, para verse bien sobre cualquiera de ellas.
 
 ## Typography
 
@@ -173,6 +173,7 @@ La forma dominante es recta y precisa (`{rounded.editorial}`). Botones, navegaci
 - **Hover / Focus:** elevación cinética de 3px en 250ms; foco visible con contorno oro de 2px y separación de 5px.
 - **Outline:** borde de tinta sobre ocre; al pasar el cursor se llena de tinta y el texto cambia a marfil (`{components.button-outline}`).
 - **Dark:** fondo azul noche y texto marfil para superficies doradas (`{components.button-dark}`).
+- **Sobre marfil o papel:** el botón principal pasa a relleno azul noche con texto marfil, para que se distinga del fondo claro.
 
 ### Text Links
 

@@ -1,0 +1,17 @@
+---
+// Franja azul con la que empieza cada página interior: volver, título e introducción.
+interface Props {
+  back?: { href: string; label: string };
+  kicker?: string;
+}
+
+const { back = { href: '/', label: 'Volver al inicio' }, kicker } = Astro.props;
+---
+<header class="page-header surface-dark">
+  <a class="text-link page-back" href={back.href}>← {back.label}</a>
+  {kicker && <p class="page-kicker">{kicker}</p>}
+  <div class="page-header-main">
+    <slot />
+  </div>
+  {Astro.slots.has('actions') && <div class="page-header-actions"><slot name="actions" /></div>}
+</header>
