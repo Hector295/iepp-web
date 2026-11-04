@@ -1,10 +1,10 @@
 # Migración a iepp.pe — en curso
 
-**Estado al 4 de noviembre de 2026:** migración en curso. GitHub Pages ya tiene `iepp.pe` como dominio personalizado. Los dos nameservers y un resolutor público confirman `mail.iepp.pe A 144.22.39.30`, `iepp.pe MX 0 mail.iepp.pe` y el SPF actualizado que se indica abajo. El proyecto pasa `npm run check` y `npm run build` (97 páginas). Pendiente: completar el despliegue, cambiar los DNS web y verificar/activar HTTPS. El A web aún apunta al hosting anterior; GitHub todavía no ha emitido el certificado nuevo. No se ha probado envío/recepción real de correo.
+**Estado al 4 de noviembre de 2026:** código y DNS web migrados. El commit `dd8ba7b` se publicó correctamente mediante GitHub Actions y Pages tiene `iepp.pe` como dominio personalizado. Los dos nameservers, Cloudflare y Google confirman los cuatro A de GitHub y el CNAME de `www`; GitHub valida ambos dominios. El MX, `mail` y el SPF conservan los valores indicados abajo; el usuario confirmó una prueba correcta de envío y recepción de correo. El proyecto pasa `npm run check` y `npm run build` (97 páginas), y la portada, confesión de fe y sede Motupe responden correctamente en GitHub con sus nuevos canonical. Pendiente: emisión del certificado y activar HTTPS. Algunos resolutores aún pueden conservar el destino web anterior en caché.
 
 ## Configuración de destino: GitHub Pages + DNS en cPanel
 
-Al completar la migración, GitHub Pages alojará la web en **https://iepp.pe**. cPanel conserva la administración DNS y el proveedor actual conserva el correo. No se necesita cargar archivos ni el ZIP anterior en cPanel.
+GitHub Pages aloja la web para **iepp.pe**; la activación de HTTPS está pendiente. cPanel conserva la administración DNS y el proveedor actual conserva el correo. No se necesita cargar archivos ni el ZIP anterior en cPanel.
 
 El repositorio es `Hector295/iepp-web`. El flujo `.github/workflows/deploy-pages.yml` comprueba y publica `out/` con cada push a `main`. Utiliza Node.js 24, GitHub Actions y los permisos de Pages del repositorio; no necesita credenciales FTP.
 
@@ -38,7 +38,7 @@ Verifica el nuevo MX y `mail` antes de cambiar la web. Deja transcurrir al menos
 
 ### 2. Preparar el proyecto, configurar GitHub y publicar
 
-Antes de publicar, cambiar el dominio de `iepp.velifatech.com` a `iepp.pe` en `astro.config.mjs`, `public/CNAME`, `public/robots.txt`, `src/pages/sitemap.xml.ts` (generado desde `Astro.site`), la comprobación del dominio en `.github/workflows/deploy-pages.yml` y las expectativas de `scripts/check-static.mjs`. Actualizar README y PRODUCT para reflejar la migración. Los metadatos y redirecciones se generan a partir de `Astro.site`; el correo institucional continúa siendo `@iepp.pe`. Ejecutar `npm run check` y `npm run build`.
+Se cambió el dominio de `iepp.velifatech.com` a `iepp.pe` en `astro.config.mjs`, `public/CNAME`, `public/robots.txt`, la comprobación del dominio en `.github/workflows/deploy-pages.yml` y las expectativas de `scripts/check-static.mjs`. Se actualizaron README y PRODUCT. El sitemap (`src/pages/sitemap.xml.ts`), los metadatos y las redirecciones se generan a partir de `Astro.site`; el correo institucional continúa siendo `@iepp.pe`. Pasaron `npm run check` y `npm run build`.
 
 En [Settings → Pages](https://github.com/Hector295/iepp-web/settings/pages):
 
@@ -46,11 +46,11 @@ En [Settings → Pages](https://github.com/Hector295/iepp-web/settings/pages):
 2. Sustituye el dominio anterior `iepp.velifatech.com` por **iepp.pe** en **Custom domain** y guarda. Hazlo antes de apuntar los DNS web a GitHub. La comprobación DNS puede quedar pendiente hasta el paso siguiente.
 3. Guarda los cambios del proyecto con commit y push a `main`. En **Actions → Deploy IEPP to GitHub Pages**, espera a que terminen correctamente los trabajos `build` y `deploy`.
 
-Tras adaptar el flujo, este deberá verificar que el dominio configurado en Pages sea `iepp.pe` y detenerse si todavía figura el dominio anterior. El archivo `public/CNAME` documenta el dominio del paquete; con GitHub Actions no sustituye a la configuración de **Custom domain**.
+El flujo verifica que el dominio configurado en Pages sea `iepp.pe` y se detiene si figura otro dominio. El archivo `public/CNAME` documenta el dominio del paquete; con GitHub Actions no sustituye a la configuración de **Custom domain**.
 
 ### 3. Apuntar la web a GitHub desde cPanel
 
-Mantén los nameservers actuales. En el Editor de zonas sustituye el A de `iepp.pe` que apunta a `144.22.39.30` por estos cuatro registros y cambia el CNAME de `www`:
+Los nameservers se conservan. En el Editor de zonas ya se sustituyó el A web anterior (`144.22.39.30`) por estos cuatro registros y se actualizó el CNAME de `www`. Todos fueron verificados en DNS:
 
 | Nombre | Tipo | Valor | TTL |
 | --- | --- | --- | --- |

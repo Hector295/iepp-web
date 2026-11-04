@@ -4,14 +4,14 @@ Sitio web estático de la IEPP: historia, confesión de fe, organización, notic
 
 ## Publicación
 
-El proyecto está preparado para publicarse en **GitHub Pages**, en **https://iepp.pe**. La migración está en curso; consulta el estado y los pasos pendientes en [MIGRACION-IEPP-PE.md](MIGRACION-IEPP-PE.md).
+La web está desplegada en **GitHub Pages** y los DNS de **iepp.pe** ya apuntan a GitHub. Falta emitir el certificado y activar HTTPS; consulta el estado y los pasos pendientes en [MIGRACION-IEPP-PE.md](MIGRACION-IEPP-PE.md).
 
 - Repositorio: `Hector295/iepp-web`.
 - Rama de publicación: `main`.
 - GitHub → Settings → Pages → Source: **GitHub Actions**.
-- Custom domain de destino: **iepp.pe**.
+- Custom domain: **iepp.pe**.
 - DNS administrados en cPanel; registros web y de correo detallados en el documento de migración.
-- HTTPS: verificar el certificado de `iepp.pe` y activar su exigencia al completar el DNS.
+- HTTPS: pendiente de emisión del certificado de `iepp.pe` y activación de su exigencia.
 
 El flujo `.github/workflows/deploy-pages.yml` comprueba los tipos, genera `out/`, valida el sitio estático y lo publica con cada push a `main`. También comprueba que Pages tenga configurado el dominio `iepp.pe` antes de desplegar.
 
