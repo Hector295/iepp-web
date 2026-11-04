@@ -3,7 +3,7 @@ import { readFile, readdir, stat } from 'node:fs/promises';
 import { Script } from 'node:vm';
 
 const source = new URL('../out/', import.meta.url);
-const origin = 'https://iepp.velifatech.com/';
+const origin = 'https://iepp.pe/';
 
 // Descubrir todas las páginas publicadas (salida en formato directorio de Astro: cada ruta es un index.html).
 async function findPages(dir = '') {
@@ -36,7 +36,7 @@ for (const file of pageFiles) {
   pageData.set(file, { html, ids: new Set(ids), url: await fileToUrl(file) });
 }
 
-assert.equal((await readFile(new URL('CNAME', source), 'utf8')).trim(), 'iepp.velifatech.com', 'El dominio de publicación debe ser iepp.velifatech.com.');
+assert.equal((await readFile(new URL('CNAME', source), 'utf8')).trim(), 'iepp.pe', 'El dominio de publicación debe ser iepp.pe.');
 await stat(new URL('.nojekyll', source));
 
 // GitHub Pages necesita archivos HTML reales para conservar las URLs antiguas.
@@ -180,4 +180,4 @@ async function checkDirectory(relative = '') {
   }
 }
 await checkDirectory();
-console.log(`OK: ${pageFiles.length} páginas, JavaScript, assets, anclas, rutas, metadatos SEO, JSON-LD, robots y sitemap para iepp.velifatech.com.`);
+console.log(`OK: ${pageFiles.length} páginas, JavaScript, assets, anclas, rutas, metadatos SEO, JSON-LD, robots y sitemap para iepp.pe.`);

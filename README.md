@@ -2,18 +2,18 @@
 
 Sitio web estático de la IEPP: historia, confesión de fe, organización, noticias y directorio de sedes.
 
-## Publicación actual
+## Publicación
 
-La web se aloja en **GitHub Pages**, en **https://iepp.velifatech.com**.
+El proyecto está preparado para publicarse en **GitHub Pages**, en **https://iepp.pe**. La migración está en curso; consulta el estado y los pasos pendientes en [MIGRACION-IEPP-PE.md](MIGRACION-IEPP-PE.md).
 
 - Repositorio: `Hector295/iepp-web`.
 - Rama de publicación: `main`.
 - GitHub → Settings → Pages → Source: **GitHub Actions**.
-- Custom domain: **iepp.velifatech.com**.
-- DNS: `iepp.velifatech.com CNAME hector295.github.io`.
-- HTTPS activado en GitHub Pages.
+- Custom domain de destino: **iepp.pe**.
+- DNS administrados en cPanel; registros web y de correo detallados en el documento de migración.
+- HTTPS: verificar el certificado de `iepp.pe` y activar su exigencia al completar el DNS.
 
-El flujo `.github/workflows/deploy-pages.yml` comprueba los tipos, genera `out/`, valida el sitio estático y lo publica con cada push a `main`. También comprueba que Pages conserve el dominio `iepp.velifatech.com` antes de desplegar.
+El flujo `.github/workflows/deploy-pages.yml` comprueba los tipos, genera `out/`, valida el sitio estático y lo publica con cada push a `main`. También comprueba que Pages tenga configurado el dominio `iepp.pe` antes de desplegar.
 
 Astro y `public/CNAME` usan ese dominio. No se añade el prefijo `/iepp-web` a las rutas. Los metadatos, sitemap y robots corresponden al dominio actual; el correo institucional continúa siendo `iglesiadelosperegrinos@iepp.pe`.
 
@@ -36,5 +36,5 @@ Cada sede tiene su página en `/sedes/<slug>`, generada desde `src/data/sedes.js
 
 ## Documentación
 
-- [Plan pendiente de migración a iepp.pe](MIGRACION-IEPP-PE.md): solo documentación; no modifica el alojamiento actual ni los DNS.
+- [Migración a iepp.pe](MIGRACION-IEPP-PE.md): estado, DNS, correo y publicación.
 - [Contenido institucional y fuentes](CONTENIDO.md).

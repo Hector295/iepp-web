@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/ y build en out/. GitHub Pages aloja iepp.velifatech.com y GitHub Actions publica los cambios de main. La migración a iepp.pe queda documentada y pendiente; el correo conserva su proveedor actual.
+Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/ y build en out/. El destino de publicación es iepp.pe en GitHub Pages, con GitHub Actions desde main y DNS administrados en cPanel. La migración está en curso y su estado se registra en MIGRACION-IEPP-PE.md; el correo conserva su proveedor actual.
 
 ## Users
 

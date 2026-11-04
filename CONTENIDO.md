@@ -1,6 +1,6 @@
 # Contenido institucional de IEPP
 
-Revisión de las páginas públicas de `iepp.pe` realizada el 21 de septiembre de 2026 como fuente para esta versión, alojada en iepp.velifatech.com.
+Revisión de las páginas públicas de `iepp.pe` realizada el 21 de septiembre de 2026 como fuente para esta versión del sitio.
 
 | Fuente | Integración en la nueva página |
 | --- | --- |

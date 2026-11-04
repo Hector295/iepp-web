@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iepp.velifatech.com/sitemap.xml
+Sitemap: https://iepp.pe/sitemap.xml

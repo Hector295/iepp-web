@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://iepp.velifatech.com',
+  site: 'https://iepp.pe',
   output: 'static',
   outDir: './out',
   devToolbar: { enabled: false },

@@ -41,8 +41,8 @@ jobs:
         shell: bash
         run: |
           domain="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.cname // ""')"
-          if [[ "$domain" != "iepp.velifatech.com" ]]; then
-            echo "::error::Set Settings > Pages > Custom domain to iepp.velifatech.com in Hector295/iepp-web before deploying. No domain settings were changed."
+          if [[ "$domain" != "iepp.pe" ]]; then
+            echo "::error::Set Settings > Pages > Custom domain to iepp.pe in Hector295/iepp-web before deploying. No domain settings were changed."
             exit 1
           fi
       - name: Upload Pages artifact

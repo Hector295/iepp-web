@@ -2,7 +2,7 @@
 
 Cada sede puede tener hasta **20 fotos**.
 
-1. Busca el identificador de la sede (`slug`) en `src/data/sedes.json`. Es la última parte de su dirección web: `iepp.velifatech.com/sedes/motupe` → `motupe`.
+1. Busca el identificador de la sede (`slug`) en `src/data/sedes.json`. Es la última parte de su dirección web: `iepp.pe/sedes/motupe` → `motupe`.
 2. Crea una carpeta con ese nombre aquí: `src/assets/sedes/motupe/`.
 3. Copia las fotos (`.jpg`, `.png` o `.webp`). Se muestran en orden por nombre: `1.jpg`, `2.jpg`, … `20.jpg`. La primera es la portada de la sede y aparece en el buscador.
 
