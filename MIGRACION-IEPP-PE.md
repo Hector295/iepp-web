@@ -1,6 +1,6 @@
 # Migración a iepp.pe — en curso
 
-**Estado al 4 de noviembre de 2026:** código y DNS web migrados. El commit `dd8ba7b` se publicó correctamente mediante GitHub Actions y Pages tiene `iepp.pe` como dominio personalizado. Los dos nameservers, Cloudflare y Google confirman los cuatro A de GitHub y el CNAME de `www`; GitHub valida ambos dominios. El MX, `mail` y el SPF conservan los valores indicados abajo; el usuario confirmó una prueba correcta de envío y recepción de correo. El proyecto pasa `npm run check` y `npm run build` (97 páginas), y la portada, confesión de fe y sede Motupe responden correctamente en GitHub con sus nuevos canonical. Pendiente: emisión del certificado y activar HTTPS. Algunos resolutores aún pueden conservar el destino web anterior en caché.
+**Estado al 4 de noviembre de 2026, 22:22 (Lima):** código y DNS web migrados. El commit `dd8ba7b` se publicó correctamente mediante GitHub Actions y Pages tiene `iepp.pe` como dominio personalizado. Los dos nameservers, Cloudflare y Google confirman los cuatro A de GitHub y el CNAME de `www`; GitHub valida ambos dominios. El MX, `mail` y el SPF conservan los valores indicados abajo; el usuario confirmó una prueba correcta de envío y recepción de correo. El proyecto pasa `npm run check` y `npm run build` (97 páginas), y la portada, confesión de fe y sede Motupe responden correctamente en GitHub con sus nuevos canonical. HTTPS sigue sin funcionar: GitHub mantiene el certificado en `authorization_pending` y rechaza su activación porque no ha terminado de emitirlo. El diagnóstico y un borrador para soporte están al final del documento.
 
 ## Configuración de destino: GitHub Pages + DNS en cPanel
 
@@ -65,6 +65,49 @@ No conserves el A anterior junto a los de GitHub. No incluyas `/iepp-web` en el 
 Tras propagarse el DNS y emitirse el certificado, activa **Enforce HTTPS** en GitHub Pages. La propagación y la disponibilidad de HTTPS pueden tardar hasta 24 horas. Comprueba `https://iepp.pe`, `https://www.iepp.pe`, las páginas principales, una sede y el correo.
 
 Una vez finalizada y verificada la migración, retira el registro DNS del antiguo `iepp.velifatech.com` si queda abandonado apuntando a GitHub; se administra en la zona de `velifatech.com`, no en esta zona.
+
+## Incidencia pendiente de HTTPS
+
+Comprobación del 4 de noviembre de 2026, 22:22 (Lima):
+
+- GitHub informa `is_valid: true`, `is_https_eligible: true` y `caa_error: null` para `iepp.pe` y `www.iepp.pe`.
+- Ambos nameservers tienen la misma zona. Cloudflare y Google devuelven las cuatro IP de GitHub; no aparece un A anterior ni un AAAA del dominio raíz. Las consultas CAA y DS responden sin errores; los CAA del destino de `www` autorizan a Let's Encrypt.
+- `http://iepp.pe/` devuelve HTTP 200 desde GitHub. Las peticiones HTTPS a ambos dominios fallan porque el certificado servido no cubre sus nombres; no se ha omitido la validación TLS.
+- El certificado permaneció en `authorization_pending` durante más de cuatro horas. A las 22:18 se retiró y restableció el dominio en Pages para reiniciar la solicitud siguiendo el procedimiento oficial. El dominio quedó restablecido; el estado sigue pendiente.
+- Al intentar `https_enforced=true`, GitHub responde HTTP 404 con `The certificate has not finished being issued`. La exigencia de HTTPS sigue desactivada; no se modificaron DNS ni correo durante este diagnóstico.
+
+No se ha identificado un ajuste DNS adicional que resolver. Si la solicitud no avanza, pedir a GitHub que revise la autorización y emisión del certificado. Cuando esté disponible, verificar HTTPS en ambos dominios, activar **Enforce HTTPS** y comprobar la redirección HTTP → HTTPS y `www` → dominio raíz.
+
+### Borrador para soporte de GitHub — no enviado
+
+Contacto: [GitHub Support](https://support.github.com/contact).
+
+```text
+Subject: GitHub Pages certificate stuck in authorization_pending for iepp.pe
+
+Repository: https://github.com/Hector295/iepp-web
+Custom domain: iepp.pe (alternate: www.iepp.pe)
+Last checked: 2026-11-04 22:22 UTC-05:00 (Lima)
+
+The Pages certificate remained in authorization_pending for more than four
+hours after the DNS change. Both authoritative nameservers, Cloudflare and
+Google resolve the apex to the four GitHub Pages IPv4 addresses. www is a
+CNAME to hector295.github.io. No conflicting apex AAAA record was found.
+
+GET /repos/Hector295/iepp-web/pages/health reports is_valid=true,
+is_https_eligible=true and caa_error=null for both domains. HTTP serves the
+deployed site, but HTTPS fails hostname validation for both domains.
+
+Removing and re-adding the custom domain has not resolved the issue.
+The latest restart was at approximately 22:18 UTC-05:00 on November 4.
+Attempting to enable https_enforced returns HTTP 404 with:
+"The certificate has not finished being issued".
+
+Please inspect the ACME authorization/certificate provisioning job and
+retry or repair it if necessary. Please preserve the custom domain.
+```
+
+Referencia: [solución de problemas de certificados en GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https#troubleshooting-certificate-provisioning-certificate-not-yet-created-error).
 
 ## Desarrollo y comprobaciones
 
