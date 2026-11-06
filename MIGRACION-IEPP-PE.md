@@ -1,10 +1,10 @@
-# Migración a iepp.pe — en curso
+# Migración a iepp.pe — completada
 
-**Estado al 4 de noviembre de 2026, 22:22 (Lima):** código y DNS web migrados. El commit `dd8ba7b` se publicó correctamente mediante GitHub Actions y Pages tiene `iepp.pe` como dominio personalizado. Los dos nameservers, Cloudflare y Google confirman los cuatro A de GitHub y el CNAME de `www`; GitHub valida ambos dominios. El MX, `mail` y el SPF conservan los valores indicados abajo; el usuario confirmó una prueba correcta de envío y recepción de correo. El proyecto pasa `npm run check` y `npm run build` (97 páginas), y la portada, confesión de fe y sede Motupe responden correctamente en GitHub con sus nuevos canonical. HTTPS sigue sin funcionar: GitHub mantiene el certificado en `authorization_pending` y rechaza su activación porque no ha terminado de emitirlo. El diagnóstico y un borrador para soporte están al final del documento.
+**Estado verificado el 6 de noviembre de 2026, 12:34 (Lima):** migración completada. GitHub Pages informa el certificado como `approved` para `iepp.pe` y `www.iepp.pe`, con `https_enforced: true`. Ambos nombres funcionan con validación TLS correcta; HTTP y `www` redirigen a `https://iepp.pe/`. El usuario confirmó previamente una prueba correcta de envío y recepción de correo y sus registros conservan el proveedor anterior. El proyecto pasó `npm run check` y `npm run build` durante la migración (97 páginas). La incidencia HTTPS quedó resuelta después de eliminar el antiguo TXT ACME y reiniciar la solicitud; esa secuencia no permite atribuir con certeza la causa al TXT. Se conserva el historial de diagnóstico abajo.
 
 ## Configuración de destino: GitHub Pages + DNS en cPanel
 
-GitHub Pages aloja la web para **iepp.pe**; la activación de HTTPS está pendiente. cPanel conserva la administración DNS y el proveedor actual conserva el correo. No se necesita cargar archivos ni el ZIP anterior en cPanel.
+GitHub Pages aloja la web para **iepp.pe**, con HTTPS activo y obligatorio. cPanel conserva la administración DNS y el proveedor actual conserva el correo. No se necesita cargar archivos ni el ZIP anterior en cPanel.
 
 El repositorio es `Hector295/iepp-web`. El flujo `.github/workflows/deploy-pages.yml` comprueba y publica `out/` con cada push a `main`. Utiliza Node.js 24, GitHub Actions y los permisos de Pages del repositorio; no necesita credenciales FTP.
 
@@ -62,11 +62,13 @@ Los nameservers se conservan. En el Editor de zonas ya se sustituyó el A web an
 
 No conserves el A anterior junto a los de GitHub. No incluyas `/iepp-web` en el CNAME. La consulta realizada no devolvió registros AAAA para el dominio raíz; si aparecen antes del cambio, deben ser compatibles con GitHub Pages para evitar enviar parte de las visitas al servidor anterior. Los registros de correo, FTP y otros servicios conservan sus destinos propios.
 
-Tras propagarse el DNS y emitirse el certificado, activa **Enforce HTTPS** en GitHub Pages. La propagación y la disponibilidad de HTTPS pueden tardar hasta 24 horas. Comprueba `https://iepp.pe`, `https://www.iepp.pe`, las páginas principales, una sede y el correo.
+**Enforce HTTPS** ya está activo. Se verificaron `https://iepp.pe`, `https://www.iepp.pe`, la confesión de fe, la sede Motupe, robots y sitemap. Para futuras migraciones, la propagación y la disponibilidad de HTTPS pueden tardar hasta 24 horas; comprobar también envío y recepción del correo.
 
 Una vez finalizada y verificada la migración, retira el registro DNS del antiguo `iepp.velifatech.com` si queda abandonado apuntando a GitHub; se administra en la zona de `velifatech.com`, no en esta zona.
 
-## Incidencia pendiente de HTTPS
+## Historial de la incidencia HTTPS — resuelta
+
+Los estados pendientes descritos a continuación corresponden a cada comprobación histórica; el estado actual es el indicado al inicio del documento y en el cierre del 6 de noviembre.
 
 Comprobación del 4 de noviembre de 2026, 22:22 (Lima):
 
@@ -76,9 +78,70 @@ Comprobación del 4 de noviembre de 2026, 22:22 (Lima):
 - El certificado permaneció en `authorization_pending` durante más de cuatro horas. A las 22:18 se retiró y restableció el dominio en Pages para reiniciar la solicitud siguiendo el procedimiento oficial. El dominio quedó restablecido; el estado sigue pendiente.
 - Al intentar `https_enforced=true`, GitHub responde HTTP 404 con `The certificate has not finished being issued`. La exigencia de HTTPS sigue desactivada; no se modificaron DNS ni correo durante este diagnóstico.
 
-No se ha identificado un ajuste DNS adicional que resolver. Si la solicitud no avanza, pedir a GitHub que revise la autorización y emisión del certificado. Cuando esté disponible, verificar HTTPS en ambos dominios, activar **Enforce HTTPS** y comprobar la redirección HTTP → HTTPS y `www` → dominio raíz.
+No se ha demostrado una causa DNS del bloqueo. Cuando el certificado esté disponible, verificar HTTPS en ambos dominios, activar **Enforce HTTPS** y comprobar la redirección HTTP → HTTPS y `www` → dominio raíz.
 
-### Borrador para soporte de GitHub — no enviado
+### Seguimiento del 5 de noviembre de 2026, 10:20 (Lima)
+
+El usuario publicó la [consulta #212162 en GitHub Community](https://github.com/orgs/community/discussions/212162). Un [comentario de g4lb](https://github.com/community/community/discussions/212162#discussioncomment-19420894) propone retirar un TXT ACME anterior y volver a registrar el dominio. Ambos nameservers confirman el siguiente registro, con el mismo valor visible en las capturas anteriores a la migración:
+
+```text
+Nombre: _acme-challenge.iepp.pe.
+Tipo: TXT
+TTL: 600
+Valor: HVerXm50uHat44_2FnNnuBGo7BvXXlw1VZUrdQ6hZIw
+```
+
+Esta es la copia de respaldo del valor anterior. **La retirada está pospuesta:** el usuario desea preservar el correo y no se ha comprobado si AutoSSL usa este valor en una validación activa. Las capturas recibidas muestran el editor DNS, no el estado de AutoSSL. No se ha eliminado el TXT ni se ha vuelto a reiniciar la solicitud. Tampoco se ha confirmado que este registro sea la causa: [Let's Encrypt admite múltiples TXT de validación y recomienda limpiar los antiguos](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).
+
+Un [segundo comentario, de Tirthika](https://github.com/community/community/discussions/212162#discussioncomment-19421022), coincide con las comprobaciones DNS y propone que el equipo de Pages revise una posible autorización ACME atascada. Es una hipótesis, no una confirmación del equipo de GitHub. El comentario afirma que se borró el archivo CNAME del repositorio, pero eso no ocurrió: se reconfiguró el dominio mediante la API de Pages. Con el despliegue por GitHub Actions, ese archivo no controla la configuración del dominio. Se conserva el DNS actual mientras se aclara la causa.
+
+### Seguimiento del 6 de noviembre de 2026
+
+Han pasado más de 36 horas desde el último reinicio de la solicitud, realizado el 4 de noviembre a las 22:18 (Lima). La API de Pages sigue devolviendo `authorization_pending` para `iepp.pe` y `www.iepp.pe`, con `https_enforced: false`. La prueba actual de `https://iepp.pe/` falla por un certificado que no cubre ese nombre; no se omitió la validación TLS.
+
+Cloudflare (`1.1.1.1`) sigue devolviendo los cuatro A de GitHub, `www` como CNAME de `hector295.github.io`, ningún AAAA ni CAA en el dominio raíz y el correo separado: `MX 0 mail.iepp.pe` y `mail.iepp.pe A 144.22.39.30`. GitHub Status informa Pages operativo y ninguna incidencia activa. La discusión sigue con los dos comentarios anteriores, sin respuesta aceptada. Las dos consultas actuales a `/pages/health` devolvieron `{}`; la validación positiva de ese endpoint corresponde a comprobaciones anteriores, no a esta revisión.
+
+El siguiente paso recomendado es solicitar una revisión de la emisión a GitHub mediante la discusión existente o un ticket si la cuenta tiene acceso a soporte técnico. No se ha confirmado la causa del bloqueo. No se volvió a reiniciar el dominio ni se modificaron el DNS, el TXT ACME, el archivo CNAME o los registros de correo. Con GitHub Free, la documentación remite la mayoría de los problemas técnicos a Community; no presentar un ticket técnico como un problema de cuenta o seguridad.
+
+### Prueba acordada del 6 de noviembre de 2026, 10:56–10:58 (Lima)
+
+El usuario confirmó que eliminó únicamente el antiguo TXT `_acme-challenge.iepp.pe`. Ambos nameservers respondieron `NXDOMAIN`, con serial de zona `2026110600`; Google, Cloudflare y Quad9 también confirmaron su ausencia. El valor anterior permanece respaldado en el seguimiento del 5 de noviembre.
+
+En las primeras consultas a Cloudflare (`1.1.1.1`) apareció `SERVFAIL` para el TXT eliminado y, posteriormente, para `iepp.pe A`, con este diagnóstico:
+
+```text
+EDE: 10 (RRSIGs Missing): (failed to verify signatures for iepp.pe. opt-out proof)
+```
+
+Las consultas posteriores a `1.1.1.1`, `1.0.0.1`, Google y Quad9 respondieron correctamente. Dos servidores autoritativos de `.pe` devolvieron la ausencia de DS con pruebas NSEC3 y sus RRSIG; no se cambió DNSSEC. Esto registra un fallo intermitente de validación, pero no demuestra que la eliminación del TXT lo causara ni que explique el bloqueo de GitHub. Si se repite, aportar esta evidencia al proveedor DNS y al registrador. [Let's Encrypt documenta que los errores DNSSEC/SERVFAIL pueden impedir la emisión](https://letsencrypt.org/docs/caa/#servfail).
+
+Con las nuevas consultas correctas se ejecutó una sola secuencia de reinicio:
+
+1. `PUT /repos/Hector295/iepp-web/pages` con `cname: null`.
+2. GET confirmó `cname: null` y `https_certificate: null`.
+3. PUT con `cname: iepp.pe`, completado a las **15:57:58 UTC / 10:57:58 Lima**.
+4. GET confirmó el dominio restaurado, certificado `authorization_pending` para raíz y `www`, y `https_enforced: false`.
+5. `http://iepp.pe/` respondió HTTP 200. MX y `mail` siguen en `mail.iepp.pe` y `144.22.39.30`; no se modificaron los registros de correo.
+
+No se ha demostrado que retirar el TXT resuelva la incidencia. Evitar nuevos reinicios mientras se comprueba el resultado de esta solicitud.
+
+**Comprobación posterior, 11:00:23 (Lima):** el certificado continúa en `authorization_pending` y la exigencia de HTTPS sigue desactivada. Las pruebas HTTPS realizadas después del reinicio fallaron por nombre de certificado tanto en el dominio raíz como en `www`; `/pages/health` volvió a devolver `{}`. El reinicio se completó, pero la incidencia todavía no está resuelta.
+
+### Cierre del 6 de noviembre de 2026, 12:34 (Lima)
+
+Tras el aviso del usuario de que HTTPS funciona, se verificó:
+
+- API de Pages: `cname: iepp.pe`, `https_certificate.state: approved`, dominios `iepp.pe` y `www.iepp.pe`, `https_enforced: true`. El certificado actual expira el 4 de febrero de 2027.
+- HTTPS raíz y `www`: respuesta final HTTP 200 en `https://iepp.pe/`, con `ssl_verify_result: 0` y sin omitir la verificación TLS.
+- HTTP raíz y `www`: una redirección hasta `https://iepp.pe/`, con respuesta final HTTP 200.
+- `/confesion-de-fe/` y `/sedes/motupe/`: HTTP 200 con certificado válido.
+- `robots.txt`: permite la indexación y señala `https://iepp.pe/sitemap.xml`. El sitemap publicado contiene 97 URL, todas bajo HTTPS y el dominio `iepp.pe`.
+
+No fue necesario activar HTTPS mediante otra modificación: ya estaba habilitado al consultar. No se cambiaron los registros del correo ni se publicó una respuesta en Community. La resolución ocurrió después de retirar el TXT y reiniciar la emisión, pero no identifica por sí sola la causa técnica del bloqueo ni explica el error DNSSEC transitorio.
+
+### Borrador histórico para soporte — no enviado, incidencia ya resuelta
+
+Se conserva como registro del diagnóstico anterior al cierre; no enviar como incidencia vigente.
 
 Contacto: [GitHub Support](https://support.github.com/contact).
 
@@ -87,24 +150,41 @@ Subject: GitHub Pages certificate stuck in authorization_pending for iepp.pe
 
 Repository: https://github.com/Hector295/iepp-web
 Custom domain: iepp.pe (alternate: www.iepp.pe)
-Last checked: 2026-11-04 22:22 UTC-05:00 (Lima)
+Update: November 6, 2026. The certificate remained authorization_pending
+for more than 36 hours after the November 5 reset. Following the suggestion
+in this discussion, the old _acme-challenge.iepp.pe TXT was removed and its
+absence confirmed on both authoritative servers and public resolvers.
+We then reset the Pages custom domain once, restoring iepp.pe on November 6
+at 15:57:58 UTC. The immediate post-reset state remains authorization_pending
+for iepp.pe and www.iepp.pe; HTTP still serves the site.
 
-The Pages certificate remained in authorization_pending for more than four
-hours after the DNS change. Both authoritative nameservers, Cloudflare and
-Google resolve the apex to the four GitHub Pages IPv4 addresses. www is a
-CNAME to hector295.github.io. No conflicting apex AAAA record was found.
+GET /repos/Hector295/iepp-web/pages still returns:
+  cname: iepp.pe
+  build_type: workflow
+  https_certificate.state: authorization_pending
+  https_enforced: false
 
-GET /repos/Hector295/iepp-web/pages/health reports is_valid=true,
-is_https_eligible=true and caa_error=null for both domains. HTTP serves the
-deployed site, but HTTPS fails hostname validation for both domains.
+Current public DNS checks still show all four GitHub Pages A addresses,
+www CNAME hector295.github.io, no apex AAAA and no apex CAA restriction.
+HTTPS for iepp.pe still fails hostname verification.
 
-Removing and re-adding the custom domain has not resolved the issue.
-The latest restart was at approximately 22:18 UTC-05:00 on November 4.
-Attempting to enable https_enforced returns HTTP 404 with:
-"The certificate has not finished being issued".
+Earlier /pages/health checks reported both domains valid and HTTPS-eligible;
+the latest two calls returned an empty JSON object. A previous attempt to
+enable HTTPS returned "The certificate has not finished being issued".
 
-Please inspect the ACME authorization/certificate provisioning job and
-retry or repair it if necessary. Please preserve the custom domain.
+During pre-reset checks, Cloudflare 1.1.1.1 briefly returned SERVFAIL for
+the removed TXT and then for iepp.pe A, with this extended DNS error:
+"RRSIGs Missing: failed to verify signatures for iepp.pe. opt-out proof".
+Subsequent queries to 1.1.1.1, 1.0.0.1, Google and Quad9 succeeded. We have
+not established whether this intermittent DNSSEC error affects issuance.
+
+For accuracy: we deploy through GitHub Actions. We reset the custom domain
+in Pages settings but did not delete the repository's CNAME file.
+Email remains hosted separately on cPanel.
+
+Could the GitHub Pages team inspect the certificate provisioning job and
+its authorization failure or retry status? We would like to resolve this
+while preserving the domain and the existing mail configuration.
 ```
 
 Referencia: [solución de problemas de certificados en GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https#troubleshooting-certificate-provisioning-certificate-not-yet-created-error).

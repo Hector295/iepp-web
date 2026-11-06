@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/ y build en out/. El destino de publicación es iepp.pe en GitHub Pages, con GitHub Actions desde main y DNS administrados en cPanel. La migración está en curso y su estado se registra en MIGRACION-IEPP-PE.md; el correo conserva su proveedor actual.
+Astro 7.3.2 con salida estática, componentes en src/ y HTML, CSS y JavaScript nativo. Assets en public/ y build en out/. La web está publicada en https://iepp.pe mediante GitHub Pages, con GitHub Actions desde main y DNS administrados en cPanel. La migración se completó el 6 de noviembre de 2026, con certificado válido y HTTPS obligatorio; el historial se registra en MIGRACION-IEPP-PE.md y el correo conserva su proveedor actual.
 
 ## Users
 
